@@ -229,7 +229,7 @@ MonoBehaviour:
   sounds:
   - name: Temporary Theme
     clip: {fileID: 8300000, guid: 4fee67c7ca3845d4085620b93f661db6, type: 3}
-    volume: 1
+    volume: 0.4
     pitch: 1
     loop: 1
     source: {fileID: 0}
