@@ -15,6 +15,4 @@ public class Sample : MonoBehaviour
     {
         Debug.Log("Hello WOrld");
     }
-
-    //aalildasiaeoi
 }
