@@ -44,7 +44,7 @@ public class GameController : MonoBehaviour
     {
         foreach(GameObject slot in inventorySlots)
         {
-            if(slot.transform.childCount > 0)
+            if(slot.transform.childCount != 0)
             {
                 inventoryFull = true;
             }

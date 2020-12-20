@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class PickUp : MonoBehaviour
 {
-    public GameObject[] slots;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -22,13 +20,14 @@ public class PickUp : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            for (int i = 0; i < slots.Length; i++)
+            for (int i = 0; i < GameController.instance.inventorySlots.Length; i++)
             {
-                if (slots[i].transform.childCount == 0)
+                if (GameController.instance.inventorySlots[i].transform.childCount < 1)
                 {
+                    Debug.Log(GameController.instance.inventorySlots[i].name);
                     gameObject.layer = 5;
-                    gameObject.transform.position = slots[i].transform.position;
-                    gameObject.transform.SetParent(slots[i].transform);
+                    gameObject.transform.position = GameController.instance.inventorySlots[i].transform.position;
+                    gameObject.transform.SetParent(GameController.instance.inventorySlots[i].transform);
 
                     RectTransform ingredientTransform = gameObject.GetComponent<RectTransform>();
                     ingredientTransform.offsetMin = new Vector2(0, 0);
