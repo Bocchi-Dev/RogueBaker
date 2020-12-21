@@ -42,18 +42,15 @@ public class GameController : MonoBehaviour
 
     public void checkFullInventory()
     {
-        foreach(GameObject slot in inventorySlots)
+        if (inventorySlots[0].transform.childCount > 0 && inventorySlots[1].transform.childCount > 0 
+            && inventorySlots[2].transform.childCount > 0 && inventorySlots[3].transform.childCount > 0)
         {
-            if(slot.transform.childCount != 0)
-            {
-                inventoryFull = true;
-            }
-            else
-            {
-                inventoryFull = false;
-            }
+            inventoryFull = true;
         }
-        Debug.Log(inventoryFull);
+        else
+        {
+            inventoryFull = false;
+        }
     }
 
     public void playerHurt()
