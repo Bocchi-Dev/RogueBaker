@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Ingredient
+  - Level
   layers:
   - Default
   - TransparentFX
