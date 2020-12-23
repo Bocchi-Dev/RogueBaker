@@ -45,6 +45,8 @@ public class GameController : MonoBehaviour
     {
         timer = timerValue;
         timerPanel.SetActive(false);
+
+        goToLevel("Overworld");
     }
 
     // Update is called once per frame
