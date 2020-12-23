@@ -119,4 +119,9 @@ public class GameController : MonoBehaviour
     {
 
     }
+
+    public void goToLevel(string level)
+    {
+        SceneManager.LoadScene(level);
+    }
 }
