@@ -196,6 +196,31 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 74419071}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &358470366 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6749878452374563644, guid: 5332caae3b8c2b34bb418761ce5a8338,
+    type: 3}
+  m_PrefabInstance: {fileID: 6749878453680705012}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &358470367
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358470366}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c99c39933841d414f8a01480045463a5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &481638128 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4784560225931688430, guid: ee35166b708a84c4c8f1fe58ad8a15ce,
@@ -3948,10 +3973,40 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 0.98942137
       objectReference: {fileID: 0}
+    - target: {fileID: 6749878452374563642, guid: 5332caae3b8c2b34bb418761ce5a8338,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.25659734
+      objectReference: {fileID: 0}
+    - target: {fileID: 6749878452374563642, guid: 5332caae3b8c2b34bb418761ce5a8338,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.9546037
+      objectReference: {fileID: 0}
+    - target: {fileID: 6749878452374563642, guid: 5332caae3b8c2b34bb418761ce5a8338,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.06374121
+      objectReference: {fileID: 0}
     - target: {fileID: 6749878452374563644, guid: 5332caae3b8c2b34bb418761ce5a8338,
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6749878452374563646, guid: 5332caae3b8c2b34bb418761ce5a8338,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.06374222
+      objectReference: {fileID: 0}
+    - target: {fileID: 6749878452374563646, guid: 5332caae3b8c2b34bb418761ce5a8338,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.944025
+      objectReference: {fileID: 0}
+    - target: {fileID: 6749878452374563646, guid: 5332caae3b8c2b34bb418761ce5a8338,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.2779804
       objectReference: {fileID: 0}
     - target: {fileID: 6749878452374563647, guid: 5332caae3b8c2b34bb418761ce5a8338,
         type: 3}

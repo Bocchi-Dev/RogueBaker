@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: d76ec46b3390e6446aa4dbad35f32ace
+guid: 34247f537629fec4f9e7d8b323750e91
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8713120321045492238
-    second: Sprite-0001-Sheet_0
-  - first:
-      213: 7900860951653682938
-    second: Sprite-0001-Sheet_1
-  - first:
-      213: 583417684835264956
-    second: Sprite-0001-Sheet_2
-  - first:
-      213: 1405152851619732130
-    second: Sprite-0001-Sheet_0
-  - first:
-      213: -7628687511203495289
-    second: Sprite-0001-Sheet_1
+      213: -2421210814467414462
+    second: Baker_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -114,31 +102,10 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Sprite-0001-Sheet_0
+      name: Baker_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 9
-        width: 32
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2aadbefd21b108310800000000000000
-      internalID: 1405152851619732130
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Sprite-0001-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 52
+        x: 6
         y: 8
         width: 32
         height: 33
@@ -149,8 +116,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 782c1488025712690800000000000000
-      internalID: -7628687511203495289
+      spriteID: 246e555a791266ed0800000000000000
+      internalID: -2421210814467414462
       vertices: []
       indices: 
       edges: []
