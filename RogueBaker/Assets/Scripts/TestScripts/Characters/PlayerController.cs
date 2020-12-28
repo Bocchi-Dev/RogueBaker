@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [Header("Movement Variables")]
+    public Animator animator;
     public float moveSpeed = 5;
     public float jumpForce;
     public float fastFall;
@@ -36,6 +37,7 @@ public class PlayerController : MonoBehaviour
     {
         extraJumps = extraJumpsValue;
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     private void FixedUpdate()
@@ -81,6 +83,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        animator.SetFloat("Speed", Mathf.Abs(horizontalMoveInput));
         //movement
         if (isGrounded)
         {
