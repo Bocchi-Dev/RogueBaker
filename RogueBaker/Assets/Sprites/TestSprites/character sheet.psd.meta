@@ -20,6 +20,15 @@ TextureImporter:
   - first:
       213: 706457906346950269
     second: bulletDestroy
+  - first:
+      213: -8024639324865408602
+    second: dog
+  - first:
+      213: 9220642419514079845
+    second: meds
+  - first:
+      213: 7672495777177413832
+    second: man
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -242,7 +251,7 @@ TextureImporter:
         width: 11
         height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -250,6 +259,69 @@ TextureImporter:
       bones: []
       spriteID: d7e739c09b7ddc900800000000000000
       internalID: 706457906346950269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dog
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 19
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a154c6ec01c2a090800000000000000
+      internalID: -8024639324865408602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meds
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 6
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56af8007d6d46ff70800000000000000
+      internalID: 9220642419514079845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 38
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c8285b324e2a7a60800000000000000
+      internalID: 7672495777177413832
       vertices: []
       indices: 
       edges: []
