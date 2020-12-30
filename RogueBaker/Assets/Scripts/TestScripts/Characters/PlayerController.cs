@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
 
     private int extraJumps;
     public int extraJumpsValue;
+    public bool jump = false;
 
     public Vector3 playerPosition;
 
@@ -38,6 +39,11 @@ public class PlayerController : MonoBehaviour
         extraJumps = extraJumpsValue;
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+    }
+
+    public void OnLanding()
+    {
+        animator.SetBool("IsJumping", false);
     }
 
     private void FixedUpdate()
@@ -80,6 +86,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+
     // Update is called once per frame
     void Update()
     {
@@ -94,6 +101,8 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetButtonDown("Jump") && extraJumps > 0)
             {
+                jump = true;
+                animator.SetBool("IsJumping", true);
                 rb.velocity = Vector2.up * jumpForce;
                 extraJumps--;
             }
@@ -123,4 +132,6 @@ public class PlayerController : MonoBehaviour
         //send position to playerPosition so enemy can find player
         playerPosition = new Vector2(transform.position.x, transform.position.y);
     }
+
+    
 }
