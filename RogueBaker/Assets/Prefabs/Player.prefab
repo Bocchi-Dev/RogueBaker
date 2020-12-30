@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 372536961574088757}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.87, y: -0.4, z: 0}
+  m_LocalPosition: {x: 1.183, y: -0.259, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 372536962334677243}
@@ -336,12 +336,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c24cb87958e2884c97cf76fae3d8b3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
   moveSpeed: 10
   jumpForce: 10
   fastFall: 25
   groundCheck: {fileID: 372536962968742320}
-  checkRadius: 0.5
+  checkRadius: 1
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
@@ -349,6 +348,11 @@ MonoBehaviour:
   playerPosition: {x: 0, y: 0, z: 0}
   startTimeBetweenAttacks: 0.5
   weapon: {fileID: 372536962151899072}
+  animator: {fileID: 0}
+  jump: 0
+  OnLandEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!95 &372536963491589352
 Animator:
   serializedVersion: 3

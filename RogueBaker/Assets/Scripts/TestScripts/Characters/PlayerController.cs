@@ -1,11 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerController : MonoBehaviour
 {
     [Header("Movement Variables")]
-    public Animator animator;
     public float moveSpeed = 5;
     public float jumpForce;
     public float fastFall;
@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
 
     private int extraJumps;
     public int extraJumpsValue;
-    public bool jump = false;
+
 
     public Vector3 playerPosition;
 
@@ -33,17 +33,18 @@ public class PlayerController : MonoBehaviour
     public float startTimeBetweenAttacks;
     public GameObject weapon;
 
+    [Header("Animation Stuff")]
+    public Animator animator;
+    public bool jump = false;
+    public UnityEvent OnLandEvent;
+    
+
     // Start is called before the first frame update
     void Start()
     {
         extraJumps = extraJumpsValue;
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-    }
-
-    public void OnLanding()
-    {
-        animator.SetBool("IsJumping", false);
     }
 
     private void FixedUpdate()
@@ -58,12 +59,18 @@ public class PlayerController : MonoBehaviour
 
         rb.velocity = new Vector2(horizontalMoveInput * moveSpeed, rb.velocity.y);
 
+        if (isGrounded)
+        {
+            OnLandEvent.Invoke();
+        }
+
         if (GameController.instance.ConversationActive)
         {
             rb.velocity = new Vector2(0, -fastFall);
             if (isGrounded)
             {
                 rb.velocity = Vector2.zero;
+                OnLandEvent.Invoke();
             }
         }
 
@@ -106,7 +113,7 @@ public class PlayerController : MonoBehaviour
                 rb.velocity = Vector2.up * jumpForce;
                 extraJumps--;
             }
-            else if (Input.GetButtonDown("Jump") && extraJumps == 0 && isGrounded == true)
+            else if (Input.GetButtonDown("Jump") && extraJumps == 0 && isGrounded)
             {
                 rb.velocity = Vector2.up * jumpForce;
             }
@@ -133,5 +140,14 @@ public class PlayerController : MonoBehaviour
         playerPosition = new Vector2(transform.position.x, transform.position.y);
     }
 
-    
+    public void OnLanding()
+    {
+        animator.SetBool("IsJumping", false);
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(groundCheck.position, checkRadius);
+    }
 }
