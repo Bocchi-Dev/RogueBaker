@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerController : MonoBehaviour
 {
@@ -24,6 +25,7 @@ public class PlayerController : MonoBehaviour
     private int extraJumps;
     public int extraJumpsValue;
 
+
     public Vector3 playerPosition;
 
     [Header("Attacking Variables")]
@@ -31,11 +33,19 @@ public class PlayerController : MonoBehaviour
     public float startTimeBetweenAttacks;
     public GameObject weapon;
 
+    [Header("Animation Stuff")]
+    public Animator animator;
+    public bool jump = false;
+    public UnityEvent OnLandEvent;
+    public UnityEvent OnJumpEvent;
+    
+
     // Start is called before the first frame update
     void Start()
     {
         extraJumps = extraJumpsValue;
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     private void FixedUpdate()
@@ -50,12 +60,23 @@ public class PlayerController : MonoBehaviour
 
         rb.velocity = new Vector2(horizontalMoveInput * moveSpeed, rb.velocity.y);
 
+        if (isGrounded)
+        {
+            OnLandEvent.Invoke();
+        }
+        else
+        {
+            OnJumpEvent.Invoke();
+        }
+
+
         if (GameController.instance.ConversationActive)
         {
             rb.velocity = new Vector2(0, -fastFall);
             if (isGrounded)
             {
                 rb.velocity = Vector2.zero;
+                OnLandEvent.Invoke();
             }
         }
 
@@ -78,9 +99,13 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(isGrounded);
+
+        animator.SetFloat("Speed", Mathf.Abs(horizontalMoveInput));
         //movement
         if (isGrounded)
         {
@@ -94,7 +119,7 @@ public class PlayerController : MonoBehaviour
                 rb.velocity = Vector2.up * jumpForce;
                 extraJumps--;
             }
-            else if (Input.GetButtonDown("Jump") && extraJumps == 0 && isGrounded == true)
+            else if (Input.GetButtonDown("Jump") && extraJumps < 1 && isGrounded)
             {
                 rb.velocity = Vector2.up * jumpForce;
             }
@@ -119,5 +144,21 @@ public class PlayerController : MonoBehaviour
 
         //send position to playerPosition so enemy can find player
         playerPosition = new Vector2(transform.position.x, transform.position.y);
+    }
+
+    public void OnLanding()
+    {
+        animator.SetBool("IsJumping", false);
+    }
+
+    public void OnJump()
+    {
+        animator.SetBool("IsJumping", true);
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(groundCheck.position, checkRadius);
     }
 }
