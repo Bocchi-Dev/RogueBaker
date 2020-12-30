@@ -3940,6 +3940,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 372536962968742320, guid: 5332caae3b8c2b34bb418761ce5a8338,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.7
+      objectReference: {fileID: 0}
     - target: {fileID: 372536963491589335, guid: 5332caae3b8c2b34bb418761ce5a8338,
         type: 3}
       propertyPath: m_OnLanding.m_PersistentCalls.m_Calls.Array.size
@@ -4008,7 +4013,12 @@ PrefabInstance:
     - target: {fileID: 372536963491589335, guid: 5332caae3b8c2b34bb418761ce5a8338,
         type: 3}
       propertyPath: checkRadius
-      value: 0.5
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 372536963491589335, guid: 5332caae3b8c2b34bb418761ce5a8338,
+        type: 3}
+      propertyPath: extraJumpsValue
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 372536963491589352, guid: 5332caae3b8c2b34bb418761ce5a8338,
         type: 3}

@@ -37,6 +37,7 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
     public bool jump = false;
     public UnityEvent OnLandEvent;
+    public UnityEvent OnJumpEvent;
     
 
     // Start is called before the first frame update
@@ -63,6 +64,11 @@ public class PlayerController : MonoBehaviour
         {
             OnLandEvent.Invoke();
         }
+        else
+        {
+            OnJumpEvent.Invoke();
+        }
+
 
         if (GameController.instance.ConversationActive)
         {
@@ -97,6 +103,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(isGrounded);
+
         animator.SetFloat("Speed", Mathf.Abs(horizontalMoveInput));
         //movement
         if (isGrounded)
@@ -108,12 +116,10 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetButtonDown("Jump") && extraJumps > 0)
             {
-                jump = true;
-                animator.SetBool("IsJumping", true);
                 rb.velocity = Vector2.up * jumpForce;
                 extraJumps--;
             }
-            else if (Input.GetButtonDown("Jump") && extraJumps == 0 && isGrounded)
+            else if (Input.GetButtonDown("Jump") && extraJumps < 1 && isGrounded)
             {
                 rb.velocity = Vector2.up * jumpForce;
             }
@@ -143,6 +149,11 @@ public class PlayerController : MonoBehaviour
     public void OnLanding()
     {
         animator.SetBool("IsJumping", false);
+    }
+
+    public void OnJump()
+    {
+        animator.SetBool("IsJumping", true);
     }
 
     private void OnDrawGizmosSelected()
