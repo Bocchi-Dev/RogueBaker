@@ -8,7 +8,6 @@ public class PlayerController : MonoBehaviour
     [Header("Movement Variables")]
     public float moveSpeed = 5;
     public float jumpForce;
-    public float fastFall;
 
     private float horizontalMoveInput;
     private float verticalMoveInput;
@@ -28,10 +27,18 @@ public class PlayerController : MonoBehaviour
 
     public Vector3 playerPosition;
 
-    [Header("Attacking Variables")]
+    [Header("Attacking stuff")]
+    public int damage;
+    public Transform hitPosition;
+    public LayerMask whatIsEnemy;
+    public float attackRange;
     private float timeBetweenAttacks = 0;
     public float startTimeBetweenAttacks;
-    public GameObject weapon;
+
+    public float knockback;
+    public float knockbackLength;
+    public float knockbackCount;
+    public bool knockbackFromRight;
 
     [Header("Animation Stuff")]
     public Animator animator;
@@ -58,8 +65,24 @@ public class PlayerController : MonoBehaviour
             verticalMoveInput = Input.GetAxis("Vertical");
         }
 
-        rb.velocity = new Vector2(horizontalMoveInput * moveSpeed, rb.velocity.y);
 
+        if(knockbackCount <= 0)
+        {
+            rb.velocity = new Vector2(horizontalMoveInput * moveSpeed, rb.velocity.y);
+        }
+        else
+        {
+            if (knockbackFromRight)
+            {
+                rb.velocity = new Vector2(-knockback, knockback);
+            }
+            if (!knockbackFromRight)
+            {
+                rb.velocity = new Vector2(knockback, knockback);
+            }
+            knockbackCount -= Time.deltaTime;
+        }
+       
         if (isGrounded)
         {
             OnLandEvent.Invoke();
@@ -72,7 +95,6 @@ public class PlayerController : MonoBehaviour
 
         if (GameController.instance.ConversationActive)
         {
-            rb.velocity = new Vector2(0, -fastFall);
             if (isGrounded)
             {
                 rb.velocity = Vector2.zero;
@@ -103,9 +125,8 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(isGrounded);
-
         animator.SetFloat("Speed", Mathf.Abs(horizontalMoveInput));
+
         //movement
         if (isGrounded)
         {
@@ -125,19 +146,16 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (!isGrounded && verticalMoveInput < 0)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, verticalMoveInput * fastFall);
-        }
-
-        //attacking
+        timeBetweenAttacks -= Time.deltaTime;
+        //attack
         if (timeBetweenAttacks <= 0)
         {
             if (!GameController.instance.ConversationActive)
             {
                 if (Input.GetButtonDown("Attack"))
                 {
-                    weapon.GetComponent<SwordAttack>().Attack();
+                    timeBetweenAttacks = startTimeBetweenAttacks;
+                    Attack();
                 }
             }
         }
@@ -146,9 +164,33 @@ public class PlayerController : MonoBehaviour
         playerPosition = new Vector2(transform.position.x, transform.position.y);
     }
 
+    public void Attack()
+    {
+        if (isGrounded)
+        {
+            animator.SetTrigger("Attack");
+        }
+        else
+        {
+            animator.SetTrigger("AirAttack");
+            animator.SetBool("AirAttacking", true);
+        }
+        
+        Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(hitPosition.position, attackRange, whatIsEnemy);
+        for (int i = 0; i < enemiesToDamage.Length; i++)
+        {
+            if (enemiesToDamage[i].gameObject.tag == "Enemy")
+            {
+                FindObjectOfType<AudioManager>().Play("Hit");
+                enemiesToDamage[i].GetComponent<Enemy>().TakeDamage(damage);
+            }
+        }
+    }
+
     public void OnLanding()
     {
         animator.SetBool("IsJumping", false);
+        animator.SetBool("AirAttacking", false);
     }
 
     public void OnJump()
@@ -160,5 +202,8 @@ public class PlayerController : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(groundCheck.position, checkRadius);
+
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(hitPosition.position, attackRange);
     }
 }
