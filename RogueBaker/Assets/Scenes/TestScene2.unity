@@ -4391,6 +4391,16 @@ PrefabInstance:
       propertyPath: startTimeBetweenAttacks
       value: 0.8
       objectReference: {fileID: 0}
+    - target: {fileID: 372536963491589335, guid: 5332caae3b8c2b34bb418761ce5a8338,
+        type: 3}
+      propertyPath: knockback
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 372536963491589335, guid: 5332caae3b8c2b34bb418761ce5a8338,
+        type: 3}
+      propertyPath: knockbackLength
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 372536963491589352, guid: 5332caae3b8c2b34bb418761ce5a8338,
         type: 3}
       propertyPath: m_Enabled

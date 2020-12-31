@@ -35,6 +35,11 @@ public class PlayerController : MonoBehaviour
     private float timeBetweenAttacks = 0;
     public float startTimeBetweenAttacks;
 
+    public float knockback;
+    public float knockbackLength;
+    public float knockbackCount;
+    public bool knockbackFromRight;
+
     [Header("Animation Stuff")]
     public Animator animator;
     public bool jump = false;
@@ -60,8 +65,24 @@ public class PlayerController : MonoBehaviour
             verticalMoveInput = Input.GetAxis("Vertical");
         }
 
-        rb.velocity = new Vector2(horizontalMoveInput * moveSpeed, rb.velocity.y);
 
+        if(knockbackCount <= 0)
+        {
+            rb.velocity = new Vector2(horizontalMoveInput * moveSpeed, rb.velocity.y);
+        }
+        else
+        {
+            if (knockbackFromRight)
+            {
+                rb.velocity = new Vector2(-knockback, knockback);
+            }
+            if (!knockbackFromRight)
+            {
+                rb.velocity = new Vector2(knockback, knockback);
+            }
+            knockbackCount -= Time.deltaTime;
+        }
+       
         if (isGrounded)
         {
             OnLandEvent.Invoke();
