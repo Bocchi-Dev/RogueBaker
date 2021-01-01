@@ -14,11 +14,11 @@ public class OverworldMovement : MonoBehaviour
     private bool canMove = true;
     private bool isMoving = false;
 
+    private Animator anime;
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(canMove);
-        Debug.Log(isMoving);
+        anime = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -32,10 +32,12 @@ public class OverworldMovement : MonoBehaviour
         if (isMoving)
         {
             canMove = false;
+            anime.SetFloat("Speed", 1f);
             movePlayer();
         }
         else
         {
+            anime.SetFloat("Speed", 0f);
             canMove = true;
         }
     }
