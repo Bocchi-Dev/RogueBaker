@@ -14,7 +14,7 @@ public class DialogueTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        continueTalk();
     }
 
     void continueTalk()
@@ -40,9 +40,7 @@ public class DialogueTrigger : MonoBehaviour
                 FindObjectOfType<DialogueManager>().StartConvo(dialogue);
                 convoStarted = true;
             }
-
         }
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -52,17 +50,6 @@ public class DialogueTrigger : MonoBehaviour
             if (!alreadyTalked)
             {
                 startTalk();
-            }
-        }
-    }
-
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player"))
-        {
-            if (convoStarted)
-            {
-                continueTalk();
             }
         }
     }

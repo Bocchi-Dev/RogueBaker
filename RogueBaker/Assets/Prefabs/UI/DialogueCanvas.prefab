@@ -365,7 +365,7 @@ MonoBehaviour:
   dialogueText: {fileID: 6662381954096721076}
   characterImage: {fileID: 6662381954637939145}
   continueButton: {fileID: 1770434398656100860}
-  typingSpeed: 0.2
+  typingSpeed: 0.01
   ConvoFinished: 0
 --- !u!1 &6662381954096721074
 GameObject:
@@ -564,7 +564,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 9d7529952e2b64845b546352b2c0355d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

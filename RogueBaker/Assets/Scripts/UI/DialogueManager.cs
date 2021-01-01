@@ -30,10 +30,9 @@ public class DialogueManager : MonoBehaviour
     public void StartConvo(Dialogue dialogue)
     {
         anime.SetBool("openDialogue", true);
+        characterImage.sprite = dialogue.characterImage.sprite;
 
         GameController.instance.ConversationActive = true;
-
-        characterImage = dialogue.characterImage;
 
         sentences.Clear();
 
