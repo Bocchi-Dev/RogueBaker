@@ -328,7 +328,7 @@ PrefabInstance:
     - target: {fileID: 6662381955376612860, guid: 8f80a5426329c794da154d5546e0ef21,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f80a5426329c794da154d5546e0ef21, type: 3}
@@ -2794,18 +2794,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 920472920}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &930235388 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6158444464416098142, guid: d8e54d913dab9414282fb686ff065596,
-    type: 3}
-  m_PrefabInstance: {fileID: 920472920}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 930235387}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &934152286
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2886,6 +2874,8 @@ GameObject:
   - component: {fileID: 1004919623}
   - component: {fileID: 1004919625}
   - component: {fileID: 1004919624}
+  - component: {fileID: 1004919627}
+  - component: {fileID: 1004919626}
   m_Layer: 0
   m_Name: DialogueDistance
   m_TagString: Untagged
@@ -2893,8 +2883,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1004919623
-Transform:
+--- !u!224 &1004919623
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2907,6 +2897,11 @@ Transform:
   m_Father: {fileID: 1260948069}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1004919624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2925,7 +2920,7 @@ MonoBehaviour:
     - Fancy seeing you here!
     - Happy New Year!
     - Merry Christmass!
-    characterImage: {fileID: 930235388}
+    characterImage: {fileID: 1004919626}
   thisDialogueDone: 0
 --- !u!58 &1004919625
 CircleCollider2D:
@@ -2943,6 +2938,43 @@ CircleCollider2D:
   m_Offset: {x: -0.13, y: -0.1}
   serializedVersion: 2
   m_Radius: 2.9495118
+--- !u!114 &1004919626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004919622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 53be8e0cf2c2c40afae2c415a3f1da7c, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1004919627
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004919622}
+  m_CullTransparentMesh: 0
 --- !u!1 &1167120841
 GameObject:
   m_ObjectHideFlags: 0
@@ -3495,7 +3527,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!50 &1260948066
 Rigidbody2D:
   serializedVersion: 4
