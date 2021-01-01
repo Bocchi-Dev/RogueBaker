@@ -3985,7 +3985,7 @@ PrefabInstance:
     - target: {fileID: 6353880545835092979, guid: b4b79923d64a87e4c945a8c5791e44b5,
         type: 3}
       propertyPath: minValue.x
-      value: -6
+      value: -5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4b79923d64a87e4c945a8c5791e44b5, type: 3}
