@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
     private int extraJumps;
     public int extraJumpsValue;
 
+    public PlayerVectorValue startingPosition;
 
     public Vector3 playerPosition;
 
@@ -53,6 +54,8 @@ public class PlayerController : MonoBehaviour
         extraJumps = extraJumpsValue;
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+
+        transform.position = startingPosition.initialValue;
     }
 
     private void FixedUpdate()
