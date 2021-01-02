@@ -857,7 +857,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -77, y: 91}
+  m_AnchoredPosition: {x: -76, y: 109}
   m_SizeDelta: {x: 234.10101, y: 70.63604}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &274955768
@@ -2267,8 +2267,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.13900001}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -121.52, y: 19.302}
-  m_SizeDelta: {x: 243.04831, y: 121.10939}
+  m_AnchoredPosition: {x: -121.24, y: 15}
+  m_SizeDelta: {x: 243.60678, y: 160.23524}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1517408583
 MonoBehaviour:
@@ -2302,15 +2302,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '1.defjkbhdjksf
-
-    2.dsjfsfsd
-
-    3.sdjkfhdsjfd
-
-    4.dfkjghdfjg
-
-    5.dfjkhdsfjklghs'
+  m_Text: "\t   controls\n\t     \nw- jump\na- walk left\nd- walk right\nj- attack\nesc-
+    pause\n\n\n"
 --- !u!222 &1517408584
 CanvasRenderer:
   m_ObjectHideFlags: 0
