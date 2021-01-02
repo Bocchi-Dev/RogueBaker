@@ -14,11 +14,11 @@ public class OverworldMovement : MonoBehaviour
     private bool canMove = true;
     private bool isMoving = false;
 
+    private Animator anime;
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(canMove);
-        Debug.Log(isMoving);
+        anime = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -32,10 +32,12 @@ public class OverworldMovement : MonoBehaviour
         if (isMoving)
         {
             canMove = false;
+            anime.SetFloat("Speed", 1f);
             movePlayer();
         }
         else
         {
+            anime.SetFloat("Speed", 0f);
             canMove = true;
         }
     }
@@ -56,30 +58,30 @@ public class OverworldMovement : MonoBehaviour
                         targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                         targetPosition.z = transform.position.z;
 
-                        if(hit.transform.gameObject.name == "Castle")
-                        {
-                            levelName = "Castle";
-                        }
-                        else if(hit.transform.gameObject.name == "CandyLand")
-                        {
-                            levelName = "Candyland";
-                        }
-                        else if (hit.transform.gameObject.name == "BanditsCave")
-                        {
-                            levelName = "BanditCave";
-                        }
-                        else if (hit.transform.gameObject.name == "WaterWorld")
-                        {
-                            levelName = "Underwater";
-                        }
-                        else if (hit.transform.gameObject.name == "LavaLand")
-                        {
-                            levelName = "Lavaland";
-                        }
-                        else if (hit.transform.gameObject.name == "FairyDomain")
-                        {
-                            levelName = "FairyDomain";
-                        }
+                        //if(hit.transform.gameObject.name == "Castle")
+                        //{
+                        //    levelName = "Castle";
+                        //}
+                        //else if(hit.transform.gameObject.name == "CandyLand")
+                        //{
+                        //    levelName = "Candyland";
+                        //}
+                        //else if (hit.transform.gameObject.name == "BanditsCave")
+                        //{
+                        //    levelName = "BanditCave";
+                        //}
+                        //else if (hit.transform.gameObject.name == "WaterWorld")
+                        //{
+                        //    levelName = "Underwater";
+                        //}
+                        //else if (hit.transform.gameObject.name == "LavaLand")
+                        //{
+                        //    levelName = "Lavaland";
+                        //}
+                        //else if (hit.transform.gameObject.name == "FairyDomain")
+                        //{
+                        //    levelName = "FairyDomain";
+                        //}
                     }
 
                     if ((targetPosition.x > maxPlayerBounds.x) || (targetPosition.x < minPlayerBounds.x) || (targetPosition.y > maxPlayerBounds.y)
@@ -113,9 +115,6 @@ public class OverworldMovement : MonoBehaviour
         if(transform.position == targetPosition)
         {
             isMoving = false;
-
-            //maybe add dialogue if you want to go to level
-            GameController.instance.goToLevel(levelName);
         }
     }
 }
