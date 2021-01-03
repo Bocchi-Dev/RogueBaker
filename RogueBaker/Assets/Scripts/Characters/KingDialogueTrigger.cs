@@ -75,7 +75,6 @@ public class KingDialogueTrigger : MonoBehaviour
             if (FindObjectOfType<DialogueManager>().ConvoFinished)
             {
                 alreadyTalked = true;
-                invisibleWall.SetActive(false);
             }
         }
     }
@@ -88,6 +87,7 @@ public class KingDialogueTrigger : MonoBehaviour
             {
                 FindObjectOfType<DialogueManager>().StartConvo(dialogue);
                 convoStarted = true;
+                invisibleWall.SetActive(false);
             }
         }
     }

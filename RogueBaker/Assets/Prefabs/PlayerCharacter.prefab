@@ -241,8 +241,8 @@ MonoBehaviour:
     m_Bits: 1024
   attackRange: 1
   startTimeBetweenAttacks: 0.5
-  knockback: 2
-  knockbackLength: 5
+  knockback: 1
+  knockbackLength: 1
   knockbackCount: 0
   knockbackFromRight: 0
   animator: {fileID: 0}

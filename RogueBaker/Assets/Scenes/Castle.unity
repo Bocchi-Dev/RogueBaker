@@ -2121,7 +2121,7 @@ MonoBehaviour:
   dialogue:
     sentences: []
     characterImage: {fileID: 1222707759}
-  invisibleWall: {fileID: 0}
+  invisibleWall: {fileID: 79486990}
   alreadyTalked: 0
   convoStarted: 0
   firstMeeting: 1
@@ -2133,7 +2133,10 @@ MonoBehaviour:
   - radadadad
   - daradarda
   - heep heep hoop huuu
-  collectRemainingIngredientsDialogue: []
+  collectRemainingIngredientsDialogue:
+  - skibbadun dudum
+  - booom
+  - weeeeereeee
   rebellionDialogue:
   - yip yip ki doodly doo
   - bilatibaychalampak ya
@@ -10503,7 +10506,7 @@ PrefabInstance:
     - target: {fileID: 6353880545835092750, guid: b4b79923d64a87e4c945a8c5791e44b5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.9629898
+      value: -8
       objectReference: {fileID: 0}
     - target: {fileID: 6353880545835092750, guid: b4b79923d64a87e4c945a8c5791e44b5,
         type: 3}
