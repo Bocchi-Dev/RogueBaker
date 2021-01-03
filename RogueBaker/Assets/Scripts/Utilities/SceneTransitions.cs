@@ -26,6 +26,7 @@ public class SceneTransitions : MonoBehaviour
     {
         //set player position in fairy cave
         //playerStorage.initialValue.x = 
+        playerStorage.initialValue = new Vector2(-1.17f, 0.91f);
         SceneManager.LoadScene("FairyDomain");
         anime.SetTrigger("FadeOut");
     }
