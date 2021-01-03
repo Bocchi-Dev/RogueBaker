@@ -88,6 +88,9 @@ public class KingDialogueTrigger : MonoBehaviour
                 FindObjectOfType<DialogueManager>().StartConvo(dialogue);
                 convoStarted = true;
                 invisibleWall.SetActive(false);
+
+                GameController.instance.timerPanel.SetActive(true);
+                GameController.instance.taskbar.SetActive(true);
             }
         }
     }

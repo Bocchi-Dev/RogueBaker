@@ -55,6 +55,7 @@ public class DialogueManager : MonoBehaviour
     {
         GameController.instance.ConversationActive = false;
         ConvoFinished = true;
+        GameController.instance.gameBegins = true;
 
         anime.SetBool("openDialogue", false);
     }

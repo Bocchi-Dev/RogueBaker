@@ -15,6 +15,7 @@ public class GameController : MonoBehaviour
     public GameObject timerPanel;
     public GameObject taskbar;
     public GameObject collectRupees;
+    public int rupeeAmount = 0;
     public TextMeshProUGUI rupeesAmountText;
     public float timerValue;
     private float timer;
@@ -103,6 +104,8 @@ public class GameController : MonoBehaviour
         {
             playerDied();
         }
+
+       
     }
 
     //check if inventory is full
@@ -167,6 +170,13 @@ public class GameController : MonoBehaviour
     public void restoreMaxHealth()
     {
         playerHealthBar.value = playerHealthBar.maxValue;
+    }
+
+    public void addRupee()
+    {
+        rupeeAmount++;
+        //count rupees
+        rupeesAmountText.text = rupeeAmount.ToString();
     }
 
     //king stuff

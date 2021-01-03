@@ -428,6 +428,16 @@ PrefabInstance:
       propertyPath: sceneToLoad
       value: Lavaland
       objectReference: {fileID: 0}
+    - target: {fileID: 1134755145303682194, guid: 9bb641f86187a6c4fa2236c305403797,
+        type: 3}
+      propertyPath: playerPosition.x
+      value: -28.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134755145303682194, guid: 9bb641f86187a6c4fa2236c305403797,
+        type: 3}
+      propertyPath: playerPosition.y
+      value: 0.13
+      objectReference: {fileID: 0}
     - target: {fileID: 1134755145303682198, guid: 9bb641f86187a6c4fa2236c305403797,
         type: 3}
       propertyPath: m_Name

@@ -27,10 +27,12 @@ public class PickUp : MonoBehaviour
                     if (GameController.instance.inventorySlots[i].transform.childCount < 1)
                     {
                         gameObject.layer = 5;
+                        gameObject.GetComponent<SpriteRenderer>().enabled = false;
                         gameObject.transform.position = GameController.instance.inventorySlots[i].transform.position;
                         gameObject.transform.SetParent(GameController.instance.inventorySlots[i].transform);
 
                         RectTransform ingredientTransform = gameObject.GetComponent<RectTransform>();
+                        ingredientTransform.position = gameObject.transform.parent.GetComponent<RectTransform>().position;
                         ingredientTransform.offsetMin = new Vector2(0, 0);
                         ingredientTransform.offsetMax = new Vector2(0, 0);
                         ingredientTransform.anchorMin = new Vector2(0, 0);
