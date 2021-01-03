@@ -1,7 +1,73 @@
 fileFormatVersion: 2
 guid: c1984aa8c293ab34f8f1755fe4a4dfb8
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 1437380550013227032
+    second: King Ground Attack-Sheet_0
+  - first:
+      213: -7869844188652150616
+    second: King Ground Attack-Sheet_1
+  - first:
+      213: -290819096776895339
+    second: King Ground Attack-Sheet_2
+  - first:
+      213: 5578832229749014321
+    second: King Ground Attack-Sheet_3
+  - first:
+      213: -4718702383341439695
+    second: King Ground Attack-Sheet_4
+  - first:
+      213: -4260613523353214770
+    second: King Ground Attack-Sheet_5
+  - first:
+      213: -819842556763350314
+    second: King Ground Attack-Sheet_6
+  - first:
+      213: 214553673211944019
+    second: King Ground Attack-Sheet_7
+  - first:
+      213: -5253874720673045899
+    second: King Ground Attack-Sheet_8
+  - first:
+      213: -7674587777736937774
+    second: King Ground Attack-Sheet_9
+  - first:
+      213: -3901431019078411774
+    second: King Ground Attack-Sheet_10
+  - first:
+      213: -1428631094534760305
+    second: King Ground Attack-Sheet_11
+  - first:
+      213: -4010799217261857726
+    second: King Ground Attack-Sheet_12
+  - first:
+      213: 2125927904708325688
+    second: King Ground Attack-Sheet_13
+  - first:
+      213: 3408073674830099623
+    second: King Ground Attack-Sheet_14
+  - first:
+      213: -190593566365388250
+    second: King Ground Attack-Sheet_15
+  - first:
+      213: 7761633965153226229
+    second: King Ground Attack-Sheet_16
+  - first:
+      213: -3151593492278471641
+    second: King Ground Attack-Sheet_17
+  - first:
+      213: -428664407283186289
+    second: King Ground Attack-Sheet_18
+  - first:
+      213: 7510371092169646662
+    second: King Ground Attack-Sheet_19
+  - first:
+      213: -5165459724692419418
+    second: King Ground Attack-Sheet_20
+  - first:
+      213: 2022609660469559856
+    second: King Ground Attack-Sheet_21
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -31,7 +97,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,12 +106,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -64,7 +130,43 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -73,7 +175,469 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: King Ground Attack-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 7
+        width: 55
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8101892aef992f310800000000000000
+      internalID: 1437380550013227032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: King Ground Attack-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 7
+        width: 51
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a067b91862b8c290800000000000000
+      internalID: -7869844188652150616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: King Ground Attack-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 7
+        width: 50
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59496b2829dc6fbf0800000000000000
+      internalID: -290819096776895339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: King Ground Attack-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 53
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13fb0b3ea5efb6d40800000000000000
+      internalID: 5578832229749014321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: King Ground Attack-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 7
+        width: 47
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 135f420ee2dc38eb0800000000000000
+      internalID: -4718702383341439695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: King Ground Attack-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 7
+        width: 43
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec06e4ff2924fd4c0800000000000000
+      internalID: -4260613523353214770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: King Ground Attack-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 7
+        width: 42
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6da5f50d9855f94f0800000000000000
+      internalID: -819842556763350314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: King Ground Attack-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 7
+        width: 43
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35c9d05dd6f3af200800000000000000
+      internalID: 214553673211944019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: King Ground Attack-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 7
+        width: 40
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 572e0eb17cc7617b0800000000000000
+      internalID: -5253874720673045899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: King Ground Attack-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 7
+        width: 41
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de6f6ee3136e7590800000000000000
+      internalID: -7674587777736937774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: King Ground Attack-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 7
+        width: 44
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20a1428a8255bd9c0800000000000000
+      internalID: -3901431019078411774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: King Ground Attack-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 51
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f889d27b69b7c2ce0800000000000000
+      internalID: -1428631094534760305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: King Ground Attack-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 7
+        width: 50
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24431bdac57c658c0800000000000000
+      internalID: -4010799217261857726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: King Ground Attack-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 7
+        width: 54
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 831fa3a6a20d08d10800000000000000
+      internalID: 2125927904708325688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: King Ground Attack-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 7
+        width: 52
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a4bb9453f8eb4f20800000000000000
+      internalID: 3408073674830099623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: King Ground Attack-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 7
+        width: 52
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 622f0544920ea5df0800000000000000
+      internalID: -190593566365388250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: King Ground Attack-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 7
+        width: 51
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fd8099e7fcd6bb60800000000000000
+      internalID: 7761633965153226229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: King Ground Attack-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 7
+        width: 51
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7241f48aa6a4344d0800000000000000
+      internalID: -3151593492278471641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: King Ground Attack-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 43
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8548042ef31d0af0800000000000000
+      internalID: -428664407283186289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: King Ground Attack-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 7
+        width: 45
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 642622877b23a3860800000000000000
+      internalID: 7510371092169646662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: King Ground Attack-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 24
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ac0f188fb99058b0800000000000000
+      internalID: -5165459724692419418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: King Ground Attack-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 26
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 032cf8b15c0c11c10800000000000000
+      internalID: 2022609660469559856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

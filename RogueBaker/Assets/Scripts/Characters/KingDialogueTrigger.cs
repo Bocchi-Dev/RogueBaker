@@ -5,6 +5,7 @@ using UnityEngine;
 public class KingDialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
+    public GameObject invisibleWall;
 
     bool playerInRange;
     public bool alreadyTalked = false;
@@ -34,25 +35,29 @@ public class KingDialogueTrigger : MonoBehaviour
         {
             GameController.instance.firstMeeting = false;
             setDialogue(introductionDialogue);
+            invisibleWall.SetActive(true);
         }
         else
         {
             if (GameController.instance.rebellion)
             {
                 setDialogue(rebellionDialogue);
+                invisibleWall.SetActive(true);
             }
             else
             {
                 if (GameController.instance.inventoryFull)
                 {
                     setDialogue(commandDialogue);
+                    invisibleWall.SetActive(true);
                 }
                 else
                 {
                     setDialogue(collectRemainingIngredientsDialogue);
+                    invisibleWall.SetActive(true);
                 }
             }
-        } 
+        }
     }
 
     // Update is called once per frame
@@ -70,6 +75,7 @@ public class KingDialogueTrigger : MonoBehaviour
             if (FindObjectOfType<DialogueManager>().ConvoFinished)
             {
                 alreadyTalked = true;
+                invisibleWall.SetActive(false);
             }
         }
     }

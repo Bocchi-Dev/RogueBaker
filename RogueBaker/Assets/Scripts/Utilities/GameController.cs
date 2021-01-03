@@ -98,6 +98,11 @@ public class GameController : MonoBehaviour
         {
             outOfTime();
         }
+
+        if(playerHealthBar.value <= 0)
+        {
+            playerDied();
+        }
     }
 
     //check if inventory is full
@@ -147,9 +152,27 @@ public class GameController : MonoBehaviour
         //explode and go to game over screen
     }
 
+    //player stuff
     public void playerHurt()
     {
         playerHealthBar.value -= 1;
+    }
+
+    public void playerDied()
+    {
+        FindObjectOfType<SceneTransitions>().playerDied();
+        restoreMaxHealth();
+    }
+
+    public void restoreMaxHealth()
+    {
+        playerHealthBar.value = playerHealthBar.maxValue;
+    }
+
+    //king stuff
+    public void strengthenKing()
+    {
+        kingHealth += 2;
     }
 
     public void goToLevel(string level)

@@ -22,6 +22,14 @@ public class SceneTransitions : MonoBehaviour
         anime.SetTrigger("FadeOut");
     }
 
+    public void playerDied()
+    {
+        //set player position in fairy cave
+        //playerStorage.initialValue.x = 
+        SceneManager.LoadScene("FairyDomain");
+        anime.SetTrigger("FadeOut");
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
