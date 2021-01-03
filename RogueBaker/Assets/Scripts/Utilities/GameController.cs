@@ -22,9 +22,7 @@ public class GameController : MonoBehaviour
     public bool inventoryFull = false;
     public bool startTimer = false;
     public bool pauseTimer = false;
-
-
-    
+ 
     private void Awake()
     {
         if (instance == null)
@@ -45,6 +43,8 @@ public class GameController : MonoBehaviour
     {
         timer = timerValue;
         timerPanel.SetActive(false);
+
+        goToLevel("Main Menu");
     }
 
     // Update is called once per frame

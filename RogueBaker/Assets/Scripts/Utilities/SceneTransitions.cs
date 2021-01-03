@@ -15,6 +15,13 @@ public class SceneTransitions : MonoBehaviour
         anime = GetComponent<Animator>();
     }
 
+    public void startGame()
+    {
+        playerStorage.initialValue = playerPosition;
+        SceneManager.LoadScene("Castle");
+        anime.SetTrigger("FadeOut");
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))

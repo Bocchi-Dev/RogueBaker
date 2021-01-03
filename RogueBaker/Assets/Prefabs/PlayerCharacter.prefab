@@ -232,6 +232,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   extraJumpsValue: 1
+  startingPosition: {fileID: 11400000, guid: 472aed735d501e644b9f0b950b6bdd09, type: 2}
   playerPosition: {x: 0, y: 0, z: 0}
   damage: 1
   hitPosition: {fileID: 372536961574088756}

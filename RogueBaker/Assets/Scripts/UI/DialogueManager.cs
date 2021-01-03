@@ -9,7 +9,6 @@ public class DialogueManager : MonoBehaviour
     [Header("UI Elements")]
     public TextMeshProUGUI dialogueText;
     public Image characterImage;
-    public GameObject continueButton;
     private Animator anime;
 
     [Header("Stuff")]
