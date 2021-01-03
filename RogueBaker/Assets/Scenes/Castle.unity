@@ -345,7 +345,7 @@ PrefabInstance:
     - target: {fileID: 372536963491589335, guid: 5332caae3b8c2b34bb418761ce5a8338,
         type: 3}
       propertyPath: knockbackCount
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 372536963491589353, guid: 5332caae3b8c2b34bb418761ce5a8338,
         type: 3}
@@ -2075,6 +2075,7 @@ MonoBehaviour:
   - radadadad
   - daradarda
   - heep heep hoop huuu
+  collectRemainingIngredientsDialogue: []
   rebellionDialogue:
   - yip yip ki doodly doo
   - bilatibaychalampak ya

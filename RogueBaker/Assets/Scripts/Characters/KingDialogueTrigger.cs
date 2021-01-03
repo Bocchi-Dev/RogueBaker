@@ -59,14 +59,6 @@ public class KingDialogueTrigger : MonoBehaviour
     void Update()
     {
         continueTalk();
-
-        if (alreadyTalked)
-        {
-            if (GameController.instance.inventoryFull)
-            {
-                GameController.instance.emptyInventory();
-            }
-        }
     }
 
     void continueTalk()
@@ -100,6 +92,11 @@ public class KingDialogueTrigger : MonoBehaviour
         {
             if (!alreadyTalked)
             {
+                if (GameController.instance.inventoryFull)
+                {
+                    GameController.instance.emptyInventory();
+                    GameController.instance.resetTimer();
+                }
                 startTalk();
             }
         }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class GameController : MonoBehaviour
     public TextMeshProUGUI rupeesAmountText;
     public float timerValue;
     private float timer;
+    public Slider playerHealthBar;
 
     [Header("Utilities")]
     public bool gameBegins = false;
@@ -30,6 +32,10 @@ public class GameController : MonoBehaviour
     public bool ConversationActive = false;
     public bool firstMeeting = true;
     public bool firstMeetingDialogueDone = false;
+
+    [Header("King Variables")]
+    [Range(4, 15)]
+    public float kingHealth;
 
     private void Awake()
     {
@@ -114,6 +120,8 @@ public class GameController : MonoBehaviour
         {
             Destroy(item.transform.GetChild(0).gameObject);             
         }
+
+        inventoryFull = false;
     }
 
     //handle timer
@@ -127,15 +135,21 @@ public class GameController : MonoBehaviour
         timerText.text = minute.ToString("00") + ":" + seconds.ToString("00");
     }
 
+    public void resetTimer()
+    {
+        timer = timerValue;
+    }
+
     //handle if time runs out
     public void outOfTime()
     {
         //condition for if timer is 0
         //explode and go to game over screen
     }
+
     public void playerHurt()
     {
-
+        playerHealthBar.value -= 1;
     }
 
     public void goToLevel(string level)
