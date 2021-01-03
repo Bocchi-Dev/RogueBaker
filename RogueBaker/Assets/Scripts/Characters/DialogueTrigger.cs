@@ -53,9 +53,4 @@ public class DialogueTrigger : MonoBehaviour
             }
         }
     }
-
-    IEnumerator waitForStartConvo()
-    {
-        yield return new WaitForSeconds(3f);
-    }
 }

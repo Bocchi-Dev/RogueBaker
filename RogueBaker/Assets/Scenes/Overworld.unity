@@ -2050,6 +2050,16 @@ PrefabInstance:
       propertyPath: sceneToLoad
       value: Castle
       objectReference: {fileID: 0}
+    - target: {fileID: 1134755145303682194, guid: 9bb641f86187a6c4fa2236c305403797,
+        type: 3}
+      propertyPath: playerPosition.x
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 1134755145303682194, guid: 9bb641f86187a6c4fa2236c305403797,
+        type: 3}
+      propertyPath: playerPosition.y
+      value: 45
+      objectReference: {fileID: 0}
     - target: {fileID: 1134755145303682198, guid: 9bb641f86187a6c4fa2236c305403797,
         type: 3}
       propertyPath: m_Name

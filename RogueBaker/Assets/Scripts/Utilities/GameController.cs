@@ -12,17 +12,25 @@ public class GameController : MonoBehaviour
     public GameObject[] inventorySlots;
     public TextMeshProUGUI timerText;
     public GameObject timerPanel;
+    public GameObject taskbar;
+    public GameObject collectRupees;
+    public TextMeshProUGUI rupeesAmountText;
     public float timerValue;
     private float timer;
 
-    [Header("Boolcrap")]
+    [Header("Utilities")]
     public bool gameBegins = false;
-    public bool ConversationActive = false;
     public bool GameOver = false;
     public bool inventoryFull = false;
     public bool startTimer = false;
     public bool pauseTimer = false;
+    public bool rebellion = false;
  
+    [Header("Dialogue Stuff")]
+    public bool ConversationActive = false;
+    public bool firstMeeting = true;
+    public bool firstMeetingDialogueDone = false;
+
     private void Awake()
     {
         if (instance == null)
@@ -43,6 +51,7 @@ public class GameController : MonoBehaviour
     {
         timer = timerValue;
         timerPanel.SetActive(false);
+        taskbar.SetActive(false);
 
         goToLevel("Main Menu");
     }
@@ -66,6 +75,7 @@ public class GameController : MonoBehaviour
         if (gameBegins)
         {
             startTimer = true;
+            taskbar.SetActive(true);
         }
 
         if (startTimer)
@@ -95,6 +105,14 @@ public class GameController : MonoBehaviour
         else
         {
             inventoryFull = false;
+        }
+    }
+
+    public void emptyInventory()
+    {
+        foreach(GameObject item in inventorySlots)
+        {
+            Destroy(item.transform.GetChild(0).gameObject);             
         }
     }
 

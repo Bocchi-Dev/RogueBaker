@@ -243,7 +243,7 @@ MonoBehaviour:
   startTimeBetweenAttacks: 0.5
   knockback: 2
   knockbackLength: 2
-  knockbackCount: 0
+  knockbackCount: 1
   knockbackFromRight: 0
   animator: {fileID: 0}
   jump: 0
