@@ -14,6 +14,7 @@ public class King : MonoBehaviour
     public float flashTime;
     Color originalColor;
     private SpriteRenderer spriteRenderer;
+    private Animator anime;
 
     //shooting
     public float offset;
@@ -31,6 +32,9 @@ public class King : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        anime = GetComponent<Animator>();
+
+        targetRadius = targetRadiusValue;
 
         originalColor = spriteRenderer.color;
         health = GameController.instance.kingHealth;
@@ -40,13 +44,19 @@ public class King : MonoBehaviour
     void Update()
     {
         //king will only start attacking when it is bossfight time
-        if (GameController.instance.bossFightTime)
+        if (GameController.instance.bossFightTime && !GameController.instance.ConversationActive)
         {
             damageable = true;
 
+            anime.SetBool("BossFightTime", true);
             if (health <= 0)
             {
                 Die();
+            }
+
+            if (playerInRange && !GameController.instance.GameOver && damageable)
+            {
+                shootPlayer();
             }
         }
 
@@ -58,10 +68,7 @@ public class King : MonoBehaviour
 
         playerInRange = Physics2D.OverlapCircle(transform.position, targetRadius, whatIsPlayer);
 
-        if (playerInRange && !GameController.instance.GameOver && damageable)
-        {
-            shootPlayer();
-        }
+        
     }
 
     private void Die()
@@ -92,7 +99,7 @@ public class King : MonoBehaviour
     void shootPlayer()
     {
         timeBetweenShots -= Time.deltaTime;
-
+        anime.SetTrigger("Attack");
         if (timeBetweenShots <= 0)
         {
             Instantiate(bullet, shootSpawn.transform.position, shootSpawn.transform.rotation);

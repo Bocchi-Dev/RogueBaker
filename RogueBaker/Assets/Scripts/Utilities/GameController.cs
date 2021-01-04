@@ -81,19 +81,21 @@ public class GameController : MonoBehaviour
             pauseTimer = false;
         }
 
-        //start timer after being commanded by king
-        if (gameBegins)
+        if (!rebellion)
         {
-            startTimer = true;
-            taskbar.SetActive(true);
-        }
-
-        if (startTimer)
-        {
-            timerPanel.SetActive(true);
-            if (!pauseTimer)
+            if (gameBegins)
             {
-                Timer();
+                startTimer = true;
+                taskbar.SetActive(true);
+            }
+
+            if (startTimer)
+            {
+                timerPanel.SetActive(true);
+                if (!pauseTimer)
+                {
+                    Timer();
+                }
             }
         }
 
@@ -157,8 +159,7 @@ public class GameController : MonoBehaviour
     //handle if time runs out
     public void outOfTime()
     {
-        //condition for if timer is 0
-        //explode and go to game over screen
+        SceneManager.LoadScene("EndScene");
     }
 
     public void endGame()
@@ -186,7 +187,6 @@ public class GameController : MonoBehaviour
     public void addRupee()
     {
         rupeeAmount++;
-        //count rupees
         rupeesAmountText.text = rupeeAmount.ToString();
     }
 
@@ -200,8 +200,10 @@ public class GameController : MonoBehaviour
     {
         pauseTimer = true;
         rebellion = true;
+        startTimer = false;
         timerPanel.SetActive(false);
     }
+
     public void goToLevel(string level)
     {
         SceneManager.LoadScene(level);
