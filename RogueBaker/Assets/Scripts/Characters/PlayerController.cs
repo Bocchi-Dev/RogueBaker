@@ -187,6 +187,11 @@ public class PlayerController : MonoBehaviour
                 FindObjectOfType<AudioManager>().Play("Hit");
                 enemiesToDamage[i].GetComponent<NewEnemy>().TakeDamage();
             }
+            if(enemiesToDamage[i].gameObject.tag == "King")
+            {
+                FindObjectOfType<AudioManager>().Play("Hit");
+                enemiesToDamage[i].GetComponent<King>().TakeDamage();
+            }
         }
     }
 

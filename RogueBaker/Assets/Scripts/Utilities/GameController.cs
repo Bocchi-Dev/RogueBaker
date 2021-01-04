@@ -29,6 +29,7 @@ public class GameController : MonoBehaviour
     public bool pauseTimer = false;
     public bool rebellion = false;
     public bool playerDead = false;
+    public bool bossFightTime = true;
  
     [Header("Dialogue Stuff")]
     public bool ConversationActive = false;
@@ -109,9 +110,7 @@ public class GameController : MonoBehaviour
         if (playerDead)
         {
             playerDied();
-        }
-
-       
+        } 
     }
 
     //check if inventory is full
@@ -159,6 +158,11 @@ public class GameController : MonoBehaviour
     {
         //condition for if timer is 0
         //explode and go to game over screen
+    }
+
+    public void endGame()
+    {
+        FindObjectOfType<SceneTransitions>().endGame();
     }
 
     //player stuff
