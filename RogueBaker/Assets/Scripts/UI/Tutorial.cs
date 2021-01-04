@@ -8,7 +8,7 @@ public class Tutorial : MonoBehaviour
     public UnityEvent triggerInstruction;
     public UnityEvent offInstruction;
 
-    private float timer = 3f;
+    private float timer = 2f;
 
     private void Update()
     {

@@ -2641,6 +2641,7 @@ MonoBehaviour:
   - I require four magical ingredients scattered throughout the land!
   - 'My patience runs thin, so I''m attaching an explosive frog to you. '
   - Be sure to bring them all back before the time runs out!
+  - Don't worry, if you do as I tell you you're life won't end as quickly.
   commandDialogue:
   - Thank you! Now I require more, go and collect some more!
   - I shall reset the timer on the frog.

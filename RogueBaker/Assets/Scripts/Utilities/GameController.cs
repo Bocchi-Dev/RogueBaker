@@ -194,6 +194,7 @@ public class GameController : MonoBehaviour
     public void playerDied()
     {
         FindObjectOfType<SceneTransitions>().playerDied();
+        playerDead = true;
         restoreMaxHealth();
     }
 

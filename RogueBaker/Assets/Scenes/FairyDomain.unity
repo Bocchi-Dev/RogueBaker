@@ -2201,6 +2201,7 @@ MonoBehaviour:
   reviveDialogue:
   - Wake up, baker!
   - I found you knocked out and revived you!
+  - The king is using you to become more powerful, don't give him the ingredients!
   - Now go, collect the rupees so we can save the land!
   removedFrogDialogue:
   - You collected the four rupees!
