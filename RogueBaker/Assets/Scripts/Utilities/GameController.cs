@@ -28,6 +28,7 @@ public class GameController : MonoBehaviour
     public bool startTimer = false;
     public bool pauseTimer = false;
     public bool rebellion = false;
+    public bool playerDead = false;
  
     [Header("Dialogue Stuff")]
     public bool ConversationActive = false;
@@ -60,7 +61,7 @@ public class GameController : MonoBehaviour
         timerPanel.SetActive(false);
         taskbar.SetActive(false);
 
-        //goToLevel("Main Menu");
+        goToLevel("Main Menu");
     }
 
     // Update is called once per frame
@@ -101,6 +102,11 @@ public class GameController : MonoBehaviour
         }
 
         if(playerHealthBar.value <= 0)
+        {
+            playerDead = true;
+        }
+
+        if (playerDead)
         {
             playerDied();
         }
@@ -185,6 +191,12 @@ public class GameController : MonoBehaviour
         kingHealth += 2;
     }
 
+    public void removeTimer()
+    {
+        pauseTimer = true;
+        rebellion = true;
+        timerPanel.SetActive(false);
+    }
     public void goToLevel(string level)
     {
         SceneManager.LoadScene(level);
