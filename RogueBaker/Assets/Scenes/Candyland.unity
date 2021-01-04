@@ -169,6 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1
+  canDamage: 1
   flashTime: 1
   stunTimerValue: 2
   patrolInOneDirectionTimeValue: 5
@@ -534,6 +535,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1
+  canDamage: 1
   flashTime: 1
   stunTimerValue: 2
   patrolInOneDirectionTimeValue: 5
@@ -632,6 +634,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1
+  canDamage: 1
   flashTime: 1
   stunTimerValue: 2
   patrolInOneDirectionTimeValue: 5
@@ -800,6 +803,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1
+  canDamage: 1
   flashTime: 1
   stunTimerValue: 2
   patrolInOneDirectionTimeValue: 5
@@ -5603,6 +5607,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1
+  canDamage: 1
   flashTime: 1
   stunTimerValue: 2
   patrolInOneDirectionTimeValue: 5
@@ -5771,6 +5776,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1
+  canDamage: 1
   flashTime: 1
   stunTimerValue: 2
   patrolInOneDirectionTimeValue: 5
@@ -28878,6 +28884,130 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 711304316d7681c49b6fbf910008fe0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1454435291
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3375898272640715763, guid: d0a72b85b96d6f54a957e45bd863cd8b,
+        type: 3}
+      propertyPath: m_text
+      value: Candyland
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375898273376849858, guid: d0a72b85b96d6f54a957e45bd863cd8b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375898273376849858, guid: d0a72b85b96d6f54a957e45bd863cd8b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375898273376849858, guid: d0a72b85b96d6f54a957e45bd863cd8b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375898273376849858, guid: d0a72b85b96d6f54a957e45bd863cd8b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375898273376849858, guid: d0a72b85b96d6f54a957e45bd863cd8b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375898273376849858, guid: d0a72b85b96d6f54a957e45bd863cd8b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375898273376849858, guid: d0a72b85b96d6f54a957e45bd863cd8b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375898273376849858, guid: d0a72b85b96d6f54a957e45bd863cd8b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375898273376849858, guid: d0a72b85b96d6f54a957e45bd863cd8b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375898273376849858, guid: d0a72b85b96d6f54a957e45bd863cd8b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375898273376849858, guid: d0a72b85b96d6f54a957e45bd863cd8b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375898273376849858, guid: d0a72b85b96d6f54a957e45bd863cd8b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375898273376849858, guid: d0a72b85b96d6f54a957e45bd863cd8b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375898273376849858, guid: d0a72b85b96d6f54a957e45bd863cd8b,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375898273376849858, guid: d0a72b85b96d6f54a957e45bd863cd8b,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375898273376849858, guid: d0a72b85b96d6f54a957e45bd863cd8b,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375898273376849858, guid: d0a72b85b96d6f54a957e45bd863cd8b,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375898273376849858, guid: d0a72b85b96d6f54a957e45bd863cd8b,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375898273376849858, guid: d0a72b85b96d6f54a957e45bd863cd8b,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375898273376849858, guid: d0a72b85b96d6f54a957e45bd863cd8b,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375898273376849858, guid: d0a72b85b96d6f54a957e45bd863cd8b,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3375898273376849870, guid: d0a72b85b96d6f54a957e45bd863cd8b,
+        type: 3}
+      propertyPath: m_Name
+      value: PlaceNameCanvas
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d0a72b85b96d6f54a957e45bd863cd8b, type: 3}
 --- !u!4 &1505850420 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6353880545835092750, guid: b4b79923d64a87e4c945a8c5791e44b5,
@@ -28932,6 +29062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1
+  canDamage: 1
   flashTime: 1
   stunTimerValue: 2
   patrolInOneDirectionTimeValue: 5
@@ -29141,6 +29272,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1
+  canDamage: 1
   flashTime: 1
   stunTimerValue: 2
   patrolInOneDirectionTimeValue: 5
@@ -29309,6 +29441,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1
+  canDamage: 1
   flashTime: 1
   stunTimerValue: 2
   patrolInOneDirectionTimeValue: 5
@@ -29477,6 +29610,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1
+  canDamage: 1
   flashTime: 1
   stunTimerValue: 2
   patrolInOneDirectionTimeValue: 5
@@ -29800,6 +29934,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1
+  canDamage: 1
   flashTime: 1
   stunTimerValue: 2
   patrolInOneDirectionTimeValue: 5
