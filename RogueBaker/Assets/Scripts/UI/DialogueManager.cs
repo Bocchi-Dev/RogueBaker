@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -45,10 +46,19 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
-        string sentence = sentences.Dequeue();
+        try
+        {
+            string sentence = sentences.Dequeue();
 
-        StopAllCoroutines();
-        StartCoroutine(Type(sentence));
+            StopAllCoroutines();
+            StartCoroutine(Type(sentence));
+        }
+        catch(Exception e)
+        {
+            Debug.LogError(e);
+        }
+
+        
     }
 
     public void EndConvo()
