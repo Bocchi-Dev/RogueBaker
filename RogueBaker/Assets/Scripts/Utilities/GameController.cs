@@ -33,7 +33,8 @@ public class GameController : MonoBehaviour
  
     [Header("Dialogue Stuff")]
     public bool ConversationActive = false;
-    public bool firstMeeting = true;
+    public bool firstMeetingKing = true;
+    public bool firstMeetingFairy = true;
     public bool firstMeetingDialogueDone = false;
 
     [Header("King Variables")]

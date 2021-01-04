@@ -26,9 +26,9 @@ public class FairyDialogueTrigger : MonoBehaviour
         alreadyTalked = false;
         convoStarted = false;
 
-        if (GameController.instance.firstMeeting)
+        if (GameController.instance.firstMeetingFairy)
         {
-            GameController.instance.firstMeeting = false;
+            GameController.instance.firstMeetingFairy = false;
             setDialogue(introductionDialogue);
         }
         else

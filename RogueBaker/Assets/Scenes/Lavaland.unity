@@ -18069,6 +18069,12 @@ PrefabInstance:
       propertyPath: m_SortingLayer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3704502028349754485, guid: 0d7ceb338567d564b8fa9d2c4978cd0c,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 4202559059651793828, guid: ce9c18cd57602a843b93565f54738ce6,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d7ceb338567d564b8fa9d2c4978cd0c, type: 3}
 --- !u!1001 &718313571
@@ -18523,7 +18529,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-
 --- !u!1001 &1541855384
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18609,11 +18614,10 @@ PrefabInstance:
     - target: {fileID: 1134755145303682198, guid: 9bb641f86187a6c4fa2236c305403797,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9bb641f86187a6c4fa2236c305403797, type: 3}
-
 --- !u!1 &1597978824
 GameObject:
   m_ObjectHideFlags: 0
