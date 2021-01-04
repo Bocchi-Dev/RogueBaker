@@ -28141,15 +28141,10 @@ Transform:
   - {fileID: 1063795644}
   - {fileID: 1944670208}
   m_Father: {fileID: 0}
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_RootOrder: 11
-=======
+
+
   m_RootOrder: 4
->>>>>>> 301c7e2971a5d9b1eb96922d101486b8f2df6a4e
-=======
-  m_RootOrder: 4
->>>>>>> 301c7e2971a5d9b1eb96922d101486b8f2df6a4e
+
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &403904271
 GameObject:
@@ -29138,13 +29133,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 
-<<<<<<< HEAD
-=======
+
 
       objectReference: {fileID: 466381597}
 
-<<<<<<< HEAD
-=======
+
+
       objectReference: {fileID: 0}
     - target: {fileID: 6353880545835092750, guid: b4b79923d64a87e4c945a8c5791e44b5,
         type: 3}
@@ -29173,7 +29167,8 @@ PrefabInstance:
 
       objectReference: {fileID: 466381597}
 
->>>>>>> 301c7e2971a5d9b1eb96922d101486b8f2df6a4e
+
+
     - target: {fileID: 6353880545835092979, guid: b4b79923d64a87e4c945a8c5791e44b5,
         type: 3}
       propertyPath: minValue.y
@@ -29193,7 +29188,7 @@ PrefabInstance:
         type: 3}
       propertyPath: maxValue.x
       value: 150
->>>>>>> 301c7e2971a5d9b1eb96922d101486b8f2df6a4e
+
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}

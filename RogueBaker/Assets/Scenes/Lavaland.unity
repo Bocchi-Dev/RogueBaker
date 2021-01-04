@@ -18523,8 +18523,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 --- !u!1001 &1541855384
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18614,10 +18613,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9bb641f86187a6c4fa2236c305403797, type: 3}
-=======
->>>>>>> 301c7e2971a5d9b1eb96922d101486b8f2df6a4e
-=======
->>>>>>> 301c7e2971a5d9b1eb96922d101486b8f2df6a4e
+
 --- !u!1 &1597978824
 GameObject:
   m_ObjectHideFlags: 0
