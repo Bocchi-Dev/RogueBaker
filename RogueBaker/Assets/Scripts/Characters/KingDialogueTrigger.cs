@@ -31,9 +31,9 @@ public class KingDialogueTrigger : MonoBehaviour
         alreadyTalked = false;
         convoStarted = false;
 
-        if (GameController.instance.firstMeeting)
+        if (GameController.instance.firstMeetingKing)
         {
-            GameController.instance.firstMeeting = false;
+            GameController.instance.firstMeetingKing = false;
             setDialogue(introductionDialogue);
             invisibleWall.SetActive(true);
         }
