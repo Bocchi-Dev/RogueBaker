@@ -31,6 +31,13 @@ public class SceneTransitions : MonoBehaviour
         anime.SetTrigger("FadeOut");
     }
 
+    public void endGame()
+    {
+        playerStorage.initialValue = new Vector2(0, 0);
+        SceneManager.LoadScene("EndScene");
+        anime.SetTrigger("FadeOut");
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))

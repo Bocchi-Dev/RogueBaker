@@ -7,7 +7,7 @@ public class EnemyBullet : MonoBehaviour
     public float speed;
     public float lifeTime;
 
-    public GameObject bulletDestroyEffect;
+    //public GameObject bulletDestroyEffect;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +24,7 @@ public class EnemyBullet : MonoBehaviour
 
     void DestroyBullet()
     {
-        Instantiate(bulletDestroyEffect, transform.position, Quaternion.identity);
+        //Instantiate(bulletDestroyEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
 
@@ -47,11 +47,6 @@ public class EnemyBullet : MonoBehaviour
             {
                 player.knockbackFromRight = false;
             }
-            DestroyBullet();
-        }
-
-        if (collision.gameObject.tag == "Weapon")
-        {
             DestroyBullet();
         }
     }
