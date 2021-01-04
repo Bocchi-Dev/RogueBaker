@@ -28,6 +28,8 @@ public class GameController : MonoBehaviour
     public bool startTimer = false;
     public bool pauseTimer = false;
     public bool rebellion = false;
+    public bool playerDead = false;
+    public bool bossFightTime = true;
  
     [Header("Dialogue Stuff")]
     public bool ConversationActive = false;
@@ -102,10 +104,13 @@ public class GameController : MonoBehaviour
 
         if(playerHealthBar.value <= 0)
         {
-            playerDied();
+            playerDead = true;
         }
 
-       
+        if (playerDead)
+        {
+            playerDied();
+        } 
     }
 
     //check if inventory is full
@@ -155,6 +160,11 @@ public class GameController : MonoBehaviour
         //explode and go to game over screen
     }
 
+    public void endGame()
+    {
+        FindObjectOfType<SceneTransitions>().endGame();
+    }
+
     //player stuff
     public void playerHurt()
     {
@@ -185,6 +195,12 @@ public class GameController : MonoBehaviour
         kingHealth += 2;
     }
 
+    public void removeTimer()
+    {
+        pauseTimer = true;
+        rebellion = true;
+        timerPanel.SetActive(false);
+    }
     public void goToLevel(string level)
     {
         SceneManager.LoadScene(level);
