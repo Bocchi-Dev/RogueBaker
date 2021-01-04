@@ -73,7 +73,7 @@ public class KingDialogueTrigger : MonoBehaviour
         if (!FindObjectOfType<DialogueManager>().ConvoFinished && Input.GetButtonDown("Attack"))
         {
             FindObjectOfType<DialogueManager>().DisplayNextSentence();
-
+            FindObjectOfType<AudioManager>().Play("King");
             if (FindObjectOfType<DialogueManager>().ConvoFinished)
             {
                 alreadyTalked = true;

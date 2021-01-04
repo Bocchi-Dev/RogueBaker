@@ -177,7 +177,7 @@ public class GameController : MonoBehaviour
     //handle if time runs out
     public void outOfTime()
     {
-        SceneManager.LoadScene("EndScene");
+        endGame();
     }
 
     public void endGame()

@@ -58,7 +58,7 @@ public class FairyDialogueTrigger : MonoBehaviour
         if (!FindObjectOfType<DialogueManager>().ConvoFinished && Input.GetButtonDown("Attack"))
         {
             FindObjectOfType<DialogueManager>().DisplayNextSentence();
-
+            FindObjectOfType<AudioManager>().Play("Fairy");
             if (FindObjectOfType<DialogueManager>().ConvoFinished)
             {
                 alreadyTalked = true;

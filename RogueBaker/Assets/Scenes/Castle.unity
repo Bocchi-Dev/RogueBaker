@@ -736,6 +736,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lava Slime_0
       objectReference: {fileID: 0}
+    - target: {fileID: 6804108430852552443, guid: ad40e0eedb5884e54aacb124b37ef556,
+        type: 3}
+      propertyPath: canDamage
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad40e0eedb5884e54aacb124b37ef556, type: 3}
 --- !u!1 &879261853
@@ -799,7 +804,7 @@ MonoBehaviour:
   offInstruction:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 879261853}
+      - m_Target: {fileID: 1576327809}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -2634,7 +2639,7 @@ MonoBehaviour:
   introductionDialogue:
   - Baker! my boy! I have a task for you!
   - I require four magical ingredients scattered throughout the land!
-  - 'My patience runs thin, so I''m attaching a explosive frog to you. '
+  - 'My patience runs thin, so I''m attaching an explosive frog to you. '
   - Be sure to bring them all back before the time runs out!
   commandDialogue:
   - Thank you! Now I require more, go and collect some more!

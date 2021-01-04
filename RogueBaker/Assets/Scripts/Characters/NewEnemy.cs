@@ -6,6 +6,7 @@ public class NewEnemy : MonoBehaviour
 {
     private Rigidbody2D rb;
     public float moveSpeed;
+    public bool canDamage = true;
 
     [Header("Stun Values")]
     public float flashTime;
@@ -112,8 +113,12 @@ public class NewEnemy : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            GameController.instance.playerHurt();
-
+            if (canDamage)
+            {
+                GameController.instance.playerHurt();
+            }
+            
+            FindObjectOfType<AudioManager>().Play("Enemy");
             //knockback
             var player = collision.gameObject.GetComponent<PlayerController>();
             player.knockbackCount = player.knockbackLength;
