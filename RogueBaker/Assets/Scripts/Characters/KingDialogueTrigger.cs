@@ -56,7 +56,7 @@ public class KingDialogueTrigger : MonoBehaviour
                 else
                 {
                     setDialogue(collectRemainingIngredientsDialogue);
-                    invisibleWall.SetActive(true);
+                    invisibleWall.SetActive(false);
                 }
             }
         }

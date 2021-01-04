@@ -130,6 +130,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 16785144}
+  - component: {fileID: 16785145}
   m_Layer: 0
   m_Name: RestartManager
   m_TagString: Untagged
@@ -151,6 +152,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &16785145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16785143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dafd9bcbf401c374f9d04d83667989f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &201343437
 GameObject:
   m_ObjectHideFlags: 0
@@ -536,9 +549,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 1356980033
+  m_SortingLayer: 3
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 806540bcfbe763049a3ebddc6b2341fc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -560,7 +573,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2091923999}
   - component: {fileID: 2091923998}
-  - component: {fileID: 2091923997}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -568,14 +580,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &2091923997
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2091923996}
-  m_Enabled: 1
 --- !u!20 &2091923998
 Camera:
   m_ObjectHideFlags: 0

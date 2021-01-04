@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -30,6 +31,7 @@ public class GameController : MonoBehaviour
     public bool rebellion = false;
     public bool playerDead = false;
     public bool bossFightTime = true;
+    public bool tutorialDone = false;
  
     [Header("Dialogue Stuff")]
     public bool ConversationActive = false;
@@ -117,7 +119,7 @@ public class GameController : MonoBehaviour
                 playerDied();
             }
         }
-        else
+        else if(bossFightTime && playerDead)
         {
             endGame();
         }
@@ -142,7 +144,15 @@ public class GameController : MonoBehaviour
     {
         foreach(GameObject item in inventorySlots)
         {
-            Destroy(item.transform.GetChild(0).gameObject);             
+            try
+            {
+                Destroy(item.transform.GetChild(0).gameObject);
+            }
+            catch(Exception e)
+            {
+                Debug.LogError(e);
+            }
+                       
         }
 
         inventoryFull = false;
@@ -215,5 +225,28 @@ public class GameController : MonoBehaviour
     public void goToLevel(string level)
     {
         SceneManager.LoadScene(level);
+    }
+
+    public void restartGame()
+    {
+        GameOver = false;
+        gameBegins = false;
+        inventoryFull = false;
+        startTimer = false;
+        pauseTimer = false;
+        rebellion = false;
+        playerDead = false;
+        bossFightTime = false;
+        ConversationActive = false;
+        firstMeetingKing = true;
+        firstMeetingFairy = true;
+        firstMeetingDialogueDone = false;
+        kingHealth = 4;
+        emptyInventory();
+        timer = timerValue;
+        timerPanel.SetActive(false);
+        taskbar.SetActive(false);
+        restoreMaxHealth();
+        timerPanel.SetActive(false);
     }
 }

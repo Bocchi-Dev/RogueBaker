@@ -64,6 +64,7 @@ public class DialogueManager : MonoBehaviour
     public void EndConvo()
     {
         GameController.instance.ConversationActive = false;
+        GameController.instance.tutorialDone = true;
         ConvoFinished = true;
 
         if (!GameController.instance.rebellion)

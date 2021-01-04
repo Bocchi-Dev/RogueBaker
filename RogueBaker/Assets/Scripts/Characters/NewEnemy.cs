@@ -99,7 +99,7 @@ public class NewEnemy : MonoBehaviour
 
     void FlashRed()
     {
-        spriteRenderer.color = Color.white;
+        spriteRenderer.color = Color.red;
         Invoke("ResetColor", flashTime);
     }
 
