@@ -74,9 +74,6 @@ public class FairyDialogueTrigger : MonoBehaviour
             {
                 FindObjectOfType<DialogueManager>().StartConvo(dialogue);
                 convoStarted = true;
-
-                GameController.instance.timerPanel.SetActive(true);
-                GameController.instance.taskbar.SetActive(true);
             }
         }
     }
@@ -87,11 +84,6 @@ public class FairyDialogueTrigger : MonoBehaviour
         {
             if (!alreadyTalked)
             {
-                if (GameController.instance.inventoryFull)
-                {
-                    GameController.instance.emptyInventory();
-                    GameController.instance.resetTimer();
-                }
                 startTalk();
             }
         }
