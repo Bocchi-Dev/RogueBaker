@@ -110,10 +110,18 @@ public class GameController : MonoBehaviour
             playerDead = true;
         }
 
-        if (playerDead)
+        if (!bossFightTime)
         {
-            playerDied();
-        } 
+            if (playerDead)
+            {
+                playerDied();
+            }
+        }
+        else
+        {
+            endGame();
+        }
+        
     }
 
     //check if inventory is full

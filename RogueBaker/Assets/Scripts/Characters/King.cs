@@ -74,6 +74,7 @@ public class King : MonoBehaviour
     private void Die()
     {
         Destroy(gameObject);
+        GameController.instance.endGame();
     }
 
     void FlashRed()
