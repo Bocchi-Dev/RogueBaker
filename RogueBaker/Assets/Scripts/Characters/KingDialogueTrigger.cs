@@ -43,6 +43,7 @@ public class KingDialogueTrigger : MonoBehaviour
             {
                 setDialogue(rebellionDialogue);
                 invisibleWall.SetActive(true);
+                GameController.instance.bossFightTime = true;
             }
             else
             {
@@ -50,6 +51,7 @@ public class KingDialogueTrigger : MonoBehaviour
                 {
                     setDialogue(commandDialogue);
                     invisibleWall.SetActive(true);
+                    GameController.instance.strengthenKing();
                 }
                 else
                 {
