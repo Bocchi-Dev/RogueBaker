@@ -60,7 +60,7 @@ public class GameController : MonoBehaviour
         timerPanel.SetActive(false);
         taskbar.SetActive(false);
 
-        goToLevel("Main Menu");
+        //goToLevel("Main Menu");
     }
 
     // Update is called once per frame
