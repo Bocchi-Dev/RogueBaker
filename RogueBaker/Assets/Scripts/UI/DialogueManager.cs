@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,7 +10,6 @@ public class DialogueManager : MonoBehaviour
     [Header("UI Elements")]
     public TextMeshProUGUI dialogueText;
     public Image characterImage;
-    public GameObject continueButton;
     private Animator anime;
 
     [Header("Stuff")]
@@ -46,16 +46,31 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
-        string sentence = sentences.Dequeue();
+        try
+        {
+            string sentence = sentences.Dequeue();
 
-        StopAllCoroutines();
-        StartCoroutine(Type(sentence));
+            StopAllCoroutines();
+            StartCoroutine(Type(sentence));
+        }
+        catch(Exception e)
+        {
+            Debug.LogError(e);
+        }
+
+        
     }
 
     public void EndConvo()
     {
         GameController.instance.ConversationActive = false;
+        GameController.instance.tutorialDone = true;
         ConvoFinished = true;
+
+        if (!GameController.instance.rebellion)
+        {
+            GameController.instance.gameBegins = true;
+        }
 
         anime.SetBool("openDialogue", false);
     }

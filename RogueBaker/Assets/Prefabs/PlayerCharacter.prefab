@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 372536961574088757}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.54, y: -0.06, z: 0}
+  m_LocalPosition: {x: 1.78, y: -0.06, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 372536962334677243}
@@ -232,6 +232,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   extraJumpsValue: 1
+  startingPosition: {fileID: 11400000, guid: 472aed735d501e644b9f0b950b6bdd09, type: 2}
   playerPosition: {x: 0, y: 0, z: 0}
   damage: 1
   hitPosition: {fileID: 372536961574088756}
@@ -240,8 +241,8 @@ MonoBehaviour:
     m_Bits: 1024
   attackRange: 1
   startTimeBetweenAttacks: 0.5
-  knockback: 2
-  knockbackLength: 2
+  knockback: 5
+  knockbackLength: 0.2
   knockbackCount: 0
   knockbackFromRight: 0
   animator: {fileID: 0}

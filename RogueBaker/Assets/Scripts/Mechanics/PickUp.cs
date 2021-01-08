@@ -27,6 +27,8 @@ public class PickUp : MonoBehaviour
                     if (GameController.instance.inventorySlots[i].transform.childCount < 1)
                     {
                         gameObject.layer = 5;
+                        gameObject.GetComponent<SpriteRenderer>().enabled = false;
+                        gameObject.GetComponent<FloatyObject>().enabled = false;
                         gameObject.transform.position = GameController.instance.inventorySlots[i].transform.position;
                         gameObject.transform.SetParent(GameController.instance.inventorySlots[i].transform);
 

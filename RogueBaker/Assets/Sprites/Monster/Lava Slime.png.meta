@@ -1,0 +1,1154 @@
+fileFormatVersion: 2
+guid: bd4d4b78288cae74c9506f4431bdb777
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2801745573454880791
+    second: Lava Slime_0
+  - first:
+      213: 3837067697690581552
+    second: Lava Slime_1
+  - first:
+      213: -7165875483226956566
+    second: Lava Slime_2
+  - first:
+      213: 8654679777195845673
+    second: Lava Slime_3
+  - first:
+      213: -8661420649692112444
+    second: Lava Slime_4
+  - first:
+      213: 1043248425665075876
+    second: Lava Slime_5
+  - first:
+      213: -2878952945549644182
+    second: Lava Slime_6
+  - first:
+      213: -426521971421869783
+    second: Lava Slime_7
+  - first:
+      213: -537073581132397038
+    second: Lava Slime_8
+  - first:
+      213: 976207123586357747
+    second: Lava Slime_9
+  - first:
+      213: 8078447889783448717
+    second: Lava Slime_10
+  - first:
+      213: 493246213507234064
+    second: Lava Slime_11
+  - first:
+      213: -4688572645937561777
+    second: Lava Slime_12
+  - first:
+      213: -6695309770202676851
+    second: Lava Slime_13
+  - first:
+      213: -1508629918621879564
+    second: Lava Slime_14
+  - first:
+      213: 5220807732539495331
+    second: Lava Slime_15
+  - first:
+      213: -6526023774545069047
+    second: Lava Slime_16
+  - first:
+      213: -1408581564242567707
+    second: Lava Slime_17
+  - first:
+      213: 5398875182612705546
+    second: Lava Slime_18
+  - first:
+      213: -5817018919631340724
+    second: Lava Slime_19
+  - first:
+      213: 192054167495110078
+    second: Lava Slime_20
+  - first:
+      213: 7459614976971335692
+    second: Lava Slime_21
+  - first:
+      213: 6669121092989674548
+    second: Lava Slime_22
+  - first:
+      213: -857286018241669565
+    second: Lava Slime_23
+  - first:
+      213: -4283601860587080985
+    second: Lava Slime_24
+  - first:
+      213: -662104852459949115
+    second: Lava Slime_25
+  - first:
+      213: 1220186656180852080
+    second: Lava Slime_26
+  - first:
+      213: -3249668323656474440
+    second: Lava Slime_27
+  - first:
+      213: 6337821730929247541
+    second: Lava Slime_28
+  - first:
+      213: 3084850050259851223
+    second: Lava Slime_0
+  - first:
+      213: 3482508328649399791
+    second: Lava Slime_1
+  - first:
+      213: 2878606911519556697
+    second: Lava Slime_2
+  - first:
+      213: -2535238153040524198
+    second: Lava Slime_3
+  - first:
+      213: -7119500280893373016
+    second: Lava Slime_4
+  - first:
+      213: -6226065594662749799
+    second: Lava Slime_5
+  - first:
+      213: 7926653790377038103
+    second: Lava Slime_6
+  - first:
+      213: 6845946878173663624
+    second: Lava Slime_7
+  - first:
+      213: 5181239542189142292
+    second: Lava Slime_8
+  - first:
+      213: -1601784549694059418
+    second: Lava Slime_9
+  - first:
+      213: -5842622245795432396
+    second: Lava Slime_10
+  - first:
+      213: 8442708536144664948
+    second: Lava Slime_11
+  - first:
+      213: -7659412372684777273
+    second: Lava Slime_12
+  - first:
+      213: 998697215676354736
+    second: Lava Slime_13
+  - first:
+      213: -3929986799752038679
+    second: Lava Slime_14
+  - first:
+      213: -3843724366860714885
+    second: Lava Slime_15
+  - first:
+      213: 6434876613238637428
+    second: Lava Slime_16
+  - first:
+      213: 4815818259700120227
+    second: Lava Slime_17
+  - first:
+      213: 1231861514208358386
+    second: Lava Slime_18
+  - first:
+      213: -4956912939084869371
+    second: Lava Slime_19
+  - first:
+      213: -751099086905344126
+    second: Lava Slime_20
+  - first:
+      213: 3870884383690975586
+    second: Lava Slime_21
+  - first:
+      213: 4937915967133848015
+    second: Lava Slime_22
+  - first:
+      213: 7679095097422464096
+    second: Lava Slime_23
+  - first:
+      213: -8683513482207809608
+    second: Lava Slime_24
+  - first:
+      213: -3280950076685891895
+    second: Lava Slime_25
+  - first:
+      213: 4788151634509526682
+    second: Lava Slime_26
+  - first:
+      213: 2154419833083495826
+    second: Lava Slime_27
+  - first:
+      213: -2652285187127993710
+    second: Lava Slime_28
+  - first:
+      213: -99489918149338804
+    second: Lava Slime_29
+  - first:
+      213: 6882495901115298839
+    second: Lava Slime_30
+  - first:
+      213: -8237029892139558916
+    second: Lava Slime_31
+  - first:
+      213: 1337832842755772770
+    second: Lava Slime_32
+  - first:
+      213: 3234726956163672820
+    second: Lava Slime_33
+  - first:
+      213: 561860760116287550
+    second: Lava Slime_34
+  - first:
+      213: -3458511657978302218
+    second: Lava Slime_35
+  - first:
+      213: 8918553430358424270
+    second: Lava Slime_36
+  - first:
+      213: -4745378630186869360
+    second: Lava Slime_37
+  - first:
+      213: 6245361186228993262
+    second: Lava Slime_38
+  - first:
+      213: -3236692812663550970
+    second: Lava Slime_39
+  - first:
+      213: -7612287272814881802
+    second: Lava Slime_40
+  - first:
+      213: 8123042349931558046
+    second: Lava Slime_41
+  - first:
+      213: -4175066874615207747
+    second: Lava Slime_42
+  - first:
+      213: -9188423728668802
+    second: Lava Slime_43
+  - first:
+      213: 1426568840179012347
+    second: Lava Slime_44
+  - first:
+      213: -1760459323590050687
+    second: Lava Slime_45
+  - first:
+      213: -4480824899688106104
+    second: Lava Slime_46
+  - first:
+      213: 3662293666389199133
+    second: Lava Slime_47
+  - first:
+      213: -5394686313389976237
+    second: Lava Slime_48
+  - first:
+      213: 8570655319475160722
+    second: Lava Slime_49
+  - first:
+      213: -4661961927183190346
+    second: Lava Slime_50
+  - first:
+      213: 4648371512926033407
+    second: Lava Slime_51
+  - first:
+      213: 3476366336212931821
+    second: Lava Slime_52
+  - first:
+      213: -3416213621907811714
+    second: Lava Slime_53
+  - first:
+      213: 2262768178793802276
+    second: Lava Slime_54
+  - first:
+      213: 4817085354694614603
+    second: Lava Slime_55
+  - first:
+      213: -7257847489726688275
+    second: Lava Slime_56
+  - first:
+      213: -9161049370979638321
+    second: Lava Slime_57
+  - first:
+      213: -3208069526598806996
+    second: Lava Slime_58
+  - first:
+      213: 3713221792819152590
+    second: Lava Slime_59
+  - first:
+      213: -7469709301036903458
+    second: Lava Slime_60
+  - first:
+      213: 5169459919419304901
+    second: Lava Slime_61
+  - first:
+      213: 5613993175618406098
+    second: Lava Slime_62
+  - first:
+      213: -4109564039182116683
+    second: Lava Slime_63
+  - first:
+      213: -6954627667244697354
+    second: Lava Slime_64
+  - first:
+      213: 3436468865711329915
+    second: Lava Slime_65
+  - first:
+      213: -8081629102550192509
+    second: Lava Slime_66
+  - first:
+      213: -8456383075209966952
+    second: Lava Slime_67
+  - first:
+      213: 1924840018200595645
+    second: Lava Slime_68
+  - first:
+      213: 6654722710649598924
+    second: Lava Slime_69
+  - first:
+      213: 5885155118422387097
+    second: Lava Slime_70
+  - first:
+      213: -4122655441652541412
+    second: Lava Slime_71
+  - first:
+      213: 514086935395604363
+    second: Lava Slime_72
+  - first:
+      213: -2845824296757344918
+    second: Lava Slime_29
+  - first:
+      213: -5165529812869198553
+    second: Lava Slime_30
+  - first:
+      213: 5624888675519417302
+    second: Lava Slime_31
+  - first:
+      213: -2412312849727183252
+    second: Lava Slime_32
+  - first:
+      213: -4717965092074775017
+    second: Lava Slime_33
+  - first:
+      213: -366173688229444448
+    second: Lava Slime_34
+  - first:
+      213: -1921890554049077094
+    second: Lava Slime_35
+  - first:
+      213: -3311975501749230800
+    second: Lava Slime_36
+  - first:
+      213: 6076477341111657300
+    second: Lava Slime_37
+  - first:
+      213: -2707368195061891413
+    second: Lava Slime_38
+  - first:
+      213: 3029839337799593766
+    second: Lava Slime_39
+  - first:
+      213: 6068587813124712657
+    second: Lava Slime_40
+  - first:
+      213: 6701052530490018791
+    second: Lava Slime_41
+  - first:
+      213: 7629989158777356168
+    second: Lava Slime_42
+  - first:
+      213: 6247525960370954138
+    second: Lava Slime_43
+  - first:
+      213: 6692244391530614107
+    second: Lava Slime_44
+  - first:
+      213: 4685144943360858085
+    second: Lava Slime_45
+  - first:
+      213: 2313076970888458753
+    second: Lava Slime_46
+  - first:
+      213: 6539305555482339657
+    second: Lava Slime_47
+  - first:
+      213: 788513835803208713
+    second: Lava Slime_48
+  - first:
+      213: 4522658925506083536
+    second: Lava Slime_49
+  - first:
+      213: -8698827364206698622
+    second: Lava Slime_50
+  - first:
+      213: 4085854279889431837
+    second: Lava Slime_51
+  - first:
+      213: -1709840343499239462
+    second: Lava Slime_52
+  - first:
+      213: -713954007515359247
+    second: Lava Slime_53
+  - first:
+      213: -7104975352395254598
+    second: Lava Slime_54
+  - first:
+      213: -1235974292225051544
+    second: Lava Slime_55
+  - first:
+      213: 310324079086389984
+    second: Lava Slime_56
+  - first:
+      213: 5655072104122780766
+    second: Lava Slime_57
+  - first:
+      213: -5784498706120962729
+    second: Lava Slime_58
+  - first:
+      213: 9152071239781803953
+    second: Lava Slime_59
+  - first:
+      213: -585269184156554996
+    second: Lava Slime_60
+  - first:
+      213: 3230111638273448015
+    second: Lava Slime_61
+  - first:
+      213: 4971867614776067138
+    second: Lava Slime_62
+  - first:
+      213: 2632251631678487904
+    second: Lava Slime_63
+  - first:
+      213: -6792578533075756572
+    second: Lava Slime_64
+  - first:
+      213: 2882797140122058663
+    second: Lava Slime_65
+  - first:
+      213: 518539083542768838
+    second: Lava Slime_66
+  - first:
+      213: 6272006084691364255
+    second: Lava Slime_67
+  - first:
+      213: 4057921007658727548
+    second: Lava Slime_68
+  - first:
+      213: 3572801623811298987
+    second: Lava Slime_69
+  - first:
+      213: -5720462305263468068
+    second: Lava Slime_70
+  - first:
+      213: -7319390094173551924
+    second: Lava Slime_71
+  - first:
+      213: 391437198569764634
+    second: Lava Slime_72
+  - first:
+      213: 3893587837040730497
+    second: Lava Slime_73
+  - first:
+      213: -9043758491201259559
+    second: Lava Slime_74
+  - first:
+      213: 8127903252368520290
+    second: Lava Slime_75
+  - first:
+      213: 7131934563392839848
+    second: Lava Slime_76
+  - first:
+      213: 3903506665657614592
+    second: Lava Slime_77
+  - first:
+      213: 8193194783774079867
+    second: Lava Slime_78
+  - first:
+      213: 1017171450345630189
+    second: Lava Slime_79
+  - first:
+      213: 6465039072233628683
+    second: Lava Slime_80
+  - first:
+      213: 2998762092218109415
+    second: Lava Slime_81
+  - first:
+      213: -1875818422500435999
+    second: Lava Slime_82
+  - first:
+      213: 3248282720098230135
+    second: Lava Slime_83
+  - first:
+      213: 582508145807125030
+    second: Lava Slime_84
+  - first:
+      213: 6306509550022901434
+    second: Lava Slime_85
+  - first:
+      213: 3734006922483059056
+    second: Lava Slime_86
+  - first:
+      213: -7424763849711965790
+    second: Lava Slime_87
+  - first:
+      213: -604022253236569739
+    second: Lava Slime_88
+  - first:
+      213: 5494903621162895447
+    second: Lava Slime_89
+  - first:
+      213: 5050189872516012165
+    second: Lava Slime_90
+  - first:
+      213: 3098031416344547170
+    second: Lava Slime_91
+  - first:
+      213: -8055512844221636695
+    second: Lava Slime_92
+  - first:
+      213: -6965913063438954903
+    second: Lava Slime_93
+  - first:
+      213: -8887932155139016648
+    second: Lava Slime_94
+  - first:
+      213: 7051946438608546189
+    second: Lava Slime_95
+  - first:
+      213: -8044970455963264209
+    second: Lava Slime_96
+  - first:
+      213: 7847977116775129979
+    second: Lava Slime_97
+  - first:
+      213: -3077445785711573335
+    second: Lava Slime_98
+  - first:
+      213: 16409116156006151
+    second: Lava Slime_99
+  - first:
+      213: -7460685016060854993
+    second: Lava Slime_100
+  - first:
+      213: 8474324567077315051
+    second: Lava Slime_101
+  - first:
+      213: 5945378202396628997
+    second: Lava Slime_102
+  - first:
+      213: -2069593932597948996
+    second: Lava Slime_103
+  - first:
+      213: -8764606907555547299
+    second: Lava Slime_104
+  - first:
+      213: 2078209863304310063
+    second: Lava Slime_105
+  - first:
+      213: 6385683964978689148
+    second: Lava Slime_106
+  - first:
+      213: 6697753901539936894
+    second: Lava Slime_107
+  - first:
+      213: 7588760305830423800
+    second: Lava Slime_108
+  - first:
+      213: -9123305970096188039
+    second: Lava Slime_109
+  - first:
+      213: 6024466502544956023
+    second: Lava Slime_110
+  - first:
+      213: 5787923241586573319
+    second: Lava Slime_111
+  - first:
+      213: 6247718599833870742
+    second: Lava Slime_112
+  - first:
+      213: -8238408299173311210
+    second: Lava Slime_113
+  - first:
+      213: 7299514999771444246
+    second: Lava Slime_114
+  - first:
+      213: -4991208512821589738
+    second: Lava Slime_115
+  - first:
+      213: 4547301336620071332
+    second: Lava Slime_116
+  - first:
+      213: -7445372575480914951
+    second: Lava Slime_117
+  - first:
+      213: 3081067028117678454
+    second: Lava Slime_118
+  - first:
+      213: 5436450516311962864
+    second: Lava Slime_119
+  - first:
+      213: 7145185316045934025
+    second: Lava Slime_120
+  - first:
+      213: -5451047464164451331
+    second: Lava Slime_121
+  - first:
+      213: 3427199025545902836
+    second: Lava Slime_122
+  - first:
+      213: -9144814591171899755
+    second: Lava Slime_123
+  - first:
+      213: 8313009634654242421
+    second: Lava Slime_124
+  - first:
+      213: 8699633751188267633
+    second: Lava Slime_125
+  - first:
+      213: -6438283626959361953
+    second: Lava Slime_126
+  - first:
+      213: -1980169975360427983
+    second: Lava Slime_127
+  - first:
+      213: -2693380276522477026
+    second: Lava Slime_128
+  - first:
+      213: -3436331676017703609
+    second: Lava Slime_129
+  - first:
+      213: -7063552609614545359
+    second: Lava Slime_130
+  - first:
+      213: 8527636220534109283
+    second: Lava Slime_131
+  - first:
+      213: 7922319008505467255
+    second: Lava Slime_132
+  - first:
+      213: 7538720335882002228
+    second: Lava Slime_133
+  - first:
+      213: 3730648764230088657
+    second: Lava Slime_134
+  - first:
+      213: -188569541301273926
+    second: Lava Slime_135
+  - first:
+      213: -4120871219271049393
+    second: Lava Slime_136
+  - first:
+      213: 2837076474248752677
+    second: Lava Slime_137
+  - first:
+      213: 2458466517156604575
+    second: Lava Slime_138
+  - first:
+      213: 7997966733096918892
+    second: Lava Slime_139
+  - first:
+      213: 5824731292080376714
+    second: Lava Slime_140
+  - first:
+      213: -826898038770720196
+    second: Lava Slime_141
+  - first:
+      213: 9086639942578200778
+    second: Lava Slime_142
+  - first:
+      213: 4328236183747657448
+    second: Lava Slime_143
+  - first:
+      213: -188539183132719788
+    second: Lava Slime_144
+  - first:
+      213: 3597195958147848895
+    second: Lava Slime_145
+  - first:
+      213: -601836328476492489
+    second: Lava Slime_146
+  - first:
+      213: 2952678742835074867
+    second: Lava Slime_147
+  - first:
+      213: -6876824787620156304
+    second: Lava Slime_148
+  - first:
+      213: 6694600609355971192
+    second: Lava Slime_149
+  - first:
+      213: -2314257510140343606
+    second: Lava Slime_150
+  - first:
+      213: -8932950474803738833
+    second: Lava Slime_151
+  - first:
+      213: -624611767465161259
+    second: Lava Slime_152
+  - first:
+      213: -4166973458630397327
+    second: Lava Slime_153
+  - first:
+      213: -4395110924691324528
+    second: Lava Slime_154
+  - first:
+      213: 6754234726092708773
+    second: Lava Slime_155
+  - first:
+      213: 7637220615676013957
+    second: Lava Slime_156
+  - first:
+      213: -8246822397348219833
+    second: Lava Slime_157
+  - first:
+      213: 6311265819959924644
+    second: Lava Slime_158
+  - first:
+      213: 4809000202844459696
+    second: Lava Slime_159
+  - first:
+      213: -7273868430397766708
+    second: Lava Slime_160
+  - first:
+      213: -1190301582666053932
+    second: Lava Slime_161
+  - first:
+      213: 4663804817326364686
+    second: Lava Slime_162
+  - first:
+      213: -3910533042540908177
+    second: Lava Slime_163
+  - first:
+      213: -1546202766250772915
+    second: Lava Slime_164
+  - first:
+      213: -5214945597976033333
+    second: Lava Slime_165
+  - first:
+      213: 5216025967319992759
+    second: Lava Slime_166
+  - first:
+      213: -9190622573408025428
+    second: Lava Slime_167
+  - first:
+      213: -3135614637946954985
+    second: Lava Slime_168
+  - first:
+      213: 8503541034962720426
+    second: Lava Slime_169
+  - first:
+      213: -1946681873849081959
+    second: Lava Slime_170
+  - first:
+      213: 8991045471958382328
+    second: Lava Slime_171
+  - first:
+      213: -2848347267430339252
+    second: Lava Slime_172
+  - first:
+      213: 636595899837677912
+    second: Lava Slime_173
+  - first:
+      213: -1258673289970737624
+    second: Lava Slime_174
+  - first:
+      213: -8777769253099343615
+    second: Lava Slime_175
+  - first:
+      213: 5156727859006906823
+    second: Lava Slime_176
+  - first:
+      213: 1014097143119013707
+    second: Lava Slime_177
+  - first:
+      213: 2379815854948690104
+    second: Lava Slime_178
+  - first:
+      213: 2854928695312269874
+    second: Lava Slime_179
+  - first:
+      213: -8832518991806677972
+    second: Lava Slime_180
+  - first:
+      213: -3727056450116694830
+    second: Lava Slime_181
+  - first:
+      213: 7598793962663678207
+    second: Lava Slime_182
+  - first:
+      213: -1984642738808015894
+    second: Lava Slime_183
+  - first:
+      213: 3022188798580184185
+    second: Lava Slime_184
+  - first:
+      213: -1789715340135976084
+    second: Lava Slime_185
+  - first:
+      213: 3194417870080179729
+    second: Lava Slime_186
+  - first:
+      213: -1735479334430883468
+    second: Lava Slime_187
+  - first:
+      213: 23164160271302533
+    second: Lava Slime_188
+  - first:
+      213: 5149896325363967205
+    second: Lava Slime_189
+  - first:
+      213: -6994981329877304479
+    second: Lava Slime_190
+  - first:
+      213: -8194028361627654763
+    second: Lava Slime_191
+  - first:
+      213: -8953763883503371347
+    second: Lava Slime_192
+  - first:
+      213: 7607368172232142365
+    second: Lava Slime_193
+  - first:
+      213: 5521196806367870135
+    second: Lava Slime_194
+  - first:
+      213: -5921201691743797372
+    second: Lava Slime_195
+  - first:
+      213: 6868979056637768642
+    second: Lava Slime_196
+  - first:
+      213: 7529570323812970246
+    second: Lava Slime_197
+  - first:
+      213: -6793850434026724029
+    second: Lava Slime_198
+  - first:
+      213: 5094585469345165936
+    second: Lava Slime_199
+  - first:
+      213: 6199900260032577101
+    second: Lava Slime_200
+  - first:
+      213: 418508104152129475
+    second: Lava Slime_201
+  - first:
+      213: -680377869398778308
+    second: Lava Slime_202
+  - first:
+      213: -4069578771786759595
+    second: Lava Slime_203
+  - first:
+      213: 939113767231210071
+    second: Lava Slime_204
+  - first:
+      213: -8947836302421086303
+    second: Lava Slime_205
+  - first:
+      213: -4522003391614202095
+    second: Lava Slime_206
+  - first:
+      213: -3547588950139213339
+    second: Lava Slime_207
+  - first:
+      213: 5322636917311171000
+    second: Lava Slime_208
+  - first:
+      213: 3954306361573952147
+    second: Lava Slime_209
+  - first:
+      213: -7593298833608206044
+    second: Lava Slime_210
+  - first:
+      213: 8742684638978545797
+    second: Lava Slime_211
+  - first:
+      213: 7434991894386544908
+    second: Lava Slime_212
+  - first:
+      213: 3162167787368144896
+    second: Lava Slime_213
+  - first:
+      213: -2219173310689241256
+    second: Lava Slime_214
+  - first:
+      213: -8300690893937549925
+    second: Lava Slime_215
+  - first:
+      213: 6533252407610249655
+    second: Lava Slime_216
+  - first:
+      213: -6567769484797184822
+    second: Lava Slime_217
+  - first:
+      213: -6465963676989266582
+    second: Lava Slime_218
+  - first:
+      213: -8490110646199981729
+    second: Lava Slime_219
+  - first:
+      213: -4096168798826431400
+    second: Lava Slime_220
+  - first:
+      213: 8475060718043588677
+    second: Lava Slime_221
+  - first:
+      213: 865180508044646582
+    second: Lava Slime_222
+  - first:
+      213: 7653521748080154701
+    second: Lava Slime_223
+  - first:
+      213: 9002437696726190401
+    second: Lava Slime_224
+  - first:
+      213: 4174055843359029124
+    second: Lava Slime_225
+  - first:
+      213: -7140303250778832860
+    second: Lava Slime_226
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Lava Slime_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 0
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d79517c6c69fca20800000000000000
+      internalID: 3084850050259851223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lava Slime_1
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fed9c70bfda545030800000000000000
+      internalID: 3482508328649399791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lava Slime_2
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 2
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9548b190cbdd2f720800000000000000
+      internalID: 2878606911519556697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lava Slime_3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 6
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5c8003055601dcd0800000000000000
+      internalID: -2535238153040524198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lava Slime_4
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a58e0b1734723d90800000000000000
+      internalID: -7119500280893373016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lava Slime_5
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 0
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99978d924529899a0800000000000000
+      internalID: -6226065594662749799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
