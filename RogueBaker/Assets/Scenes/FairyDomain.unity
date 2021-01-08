@@ -2212,6 +2212,9 @@ MonoBehaviour:
   - You collected the four rupees!
   - '*Ka-thunk* The frog has been removed! You can now fight the king!'
   - I cannot help you now, so you must not fail. Good luck, baker!
+  notEnoughRupeesDialogue:
+  - Baker, you still don't have enough rupees for me to regain my power!
+  - Remember, they're spread out around the land and I need 4 rupees!
 --- !u!58 &2021715294
 CircleCollider2D:
   m_ObjectHideFlags: 0

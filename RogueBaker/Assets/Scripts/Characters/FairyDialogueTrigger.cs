@@ -18,6 +18,8 @@ public class FairyDialogueTrigger : MonoBehaviour
     public string[] reviveDialogue;
     [TextArea(3, 10)]
     public string[] removedFrogDialogue;
+    [TextArea(3, 10)]
+    public string[] notEnoughRupeesDialogue;
 
     // Start is called before the first frame update
     void Start()
@@ -37,6 +39,11 @@ public class FairyDialogueTrigger : MonoBehaviour
             {
                 setDialogue(reviveDialogue);
                 GameController.instance.playerDead = false;
+            }
+
+            if(GameController.instance.rupeeAmount < 4)
+            {
+                setDialogue(notEnoughRupeesDialogue);
             }
 
             if(GameController.instance.rupeeAmount >= 4)
