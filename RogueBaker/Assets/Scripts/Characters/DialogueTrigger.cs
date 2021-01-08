@@ -19,7 +19,7 @@ public class DialogueTrigger : MonoBehaviour
 
     void continueTalk()
     {
-        if (!FindObjectOfType<DialogueManager>().ConvoFinished && Input.GetButtonDown("Attack"))
+        if (!FindObjectOfType<DialogueManager>().ConvoFinished && Input.GetButtonDown("Attack") && playerInRange)
         {
             FindObjectOfType<DialogueManager>().DisplayNextSentence();
 
@@ -47,10 +47,19 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            playerInRange = true;
             if (!alreadyTalked)
             {
                 startTalk();
             }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            playerInRange = false;
         }
     }
 }

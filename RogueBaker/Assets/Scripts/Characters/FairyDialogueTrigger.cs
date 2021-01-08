@@ -55,7 +55,7 @@ public class FairyDialogueTrigger : MonoBehaviour
 
     void continueTalk()
     {
-        if (!FindObjectOfType<DialogueManager>().ConvoFinished && Input.GetButtonDown("Attack"))
+        if (!FindObjectOfType<DialogueManager>().ConvoFinished && Input.GetButtonDown("Attack") && playerInRange)
         {
             FindObjectOfType<DialogueManager>().DisplayNextSentence();
             FindObjectOfType<AudioManager>().Play("Fairy");
@@ -70,6 +70,7 @@ public class FairyDialogueTrigger : MonoBehaviour
     {
         if (!FindObjectOfType<DialogueManager>().ConvoFinished)
         {
+            playerInRange = true;
             if (!convoStarted)
             {
                 FindObjectOfType<DialogueManager>().StartConvo(dialogue);
@@ -101,6 +102,14 @@ public class FairyDialogueTrigger : MonoBehaviour
         for (int c = 0; c < setDialogue.Length; c++)
         {
             dialogue.sentences[c] = setDialogue[c];
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            playerInRange = false;
         }
     }
 }

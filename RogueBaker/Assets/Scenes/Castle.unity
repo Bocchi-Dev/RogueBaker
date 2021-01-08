@@ -392,12 +392,12 @@ PrefabInstance:
     - target: {fileID: 372536963491589335, guid: 5332caae3b8c2b34bb418761ce5a8338,
         type: 3}
       propertyPath: knockbackLength
-      value: 1
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 372536963491589335, guid: 5332caae3b8c2b34bb418761ce5a8338,
         type: 3}
       propertyPath: knockback
-      value: 0.2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 372536963491589335, guid: 5332caae3b8c2b34bb418761ce5a8338,
         type: 3}

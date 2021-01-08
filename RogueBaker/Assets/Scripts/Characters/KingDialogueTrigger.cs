@@ -70,7 +70,7 @@ public class KingDialogueTrigger : MonoBehaviour
 
     void continueTalk()
     {
-        if (!FindObjectOfType<DialogueManager>().ConvoFinished && Input.GetButtonDown("Attack"))
+        if (!FindObjectOfType<DialogueManager>().ConvoFinished && Input.GetButtonDown("Attack") && playerInRange)
         {
             FindObjectOfType<DialogueManager>().DisplayNextSentence();
             FindObjectOfType<AudioManager>().Play("King");
@@ -101,6 +101,7 @@ public class KingDialogueTrigger : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            playerInRange = true;
             if (!alreadyTalked)
             {
                 if (GameController.instance.inventoryFull)
@@ -125,6 +126,14 @@ public class KingDialogueTrigger : MonoBehaviour
         for (int c = 0; c < setDialogue.Length; c++)
         {
             dialogue.sentences[c] = setDialogue[c];
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            playerInRange = false;
         }
     }
 }

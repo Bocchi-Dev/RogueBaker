@@ -128,6 +128,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 380159553185650918, guid: 5da522123374e1349a80a8d50649025a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -312.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 380159553185650918, guid: 5da522123374e1349a80a8d50649025a,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 141.41888
+      objectReference: {fileID: 0}
     - target: {fileID: 918324580693240744, guid: 5da522123374e1349a80a8d50649025a,
         type: 3}
       propertyPath: m_Name
@@ -257,6 +267,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5784200712981021044, guid: 5da522123374e1349a80a8d50649025a,
+        type: 3}
+      propertyPath: m_Value
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8466759231110048937, guid: 5da522123374e1349a80a8d50649025a,
         type: 3}
@@ -993,6 +1008,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DialogueCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6662381955376612862, guid: 8f80a5426329c794da154d5546e0ef21,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f80a5426329c794da154d5546e0ef21, type: 3}
